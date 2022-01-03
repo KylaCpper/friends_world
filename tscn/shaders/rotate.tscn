@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/shaders/whirl.shader" type="Shader" id=1]
+[ext_resource path="res://tscn/shaders/rotate.gd" type="Script" id=2]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/rotation = 0.0
+shader_param/brightness = 1.0
+
+[sub_resource type="ImageTexture" id=2]
+flags = 0
+flags = 0
+size = Vector2( 1, 1 )
+
+[node name="rotate" type="TextureRect"]
+material = SubResource( 1 )
+margin_right = 1024.0
+margin_bottom = 600.0
+texture = SubResource( 2 )
+expand = true
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

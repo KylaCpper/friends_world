@@ -1,0 +1,318 @@
+{
+  "default": [],
+  "wood_age": [
+    {
+      "key": "wood_board",
+      "table": [
+        {
+          "table": {
+            "wood": 1
+          },
+          "name": "wood_board",
+          "num": 2,
+          "time": 1.0
+        },
+        {
+          "table": {
+            "wood_broken": 1
+          },
+          "name": "wood_board",
+          "num": 1,
+          "time": 1.0
+        }
+      ]
+    },
+    {
+      "key": "wood_stick",
+      "table": [
+        {
+          "table": {
+            "wood_board": 1
+          },
+          "name": "wood_stick",
+          "num": 2
+        },
+        {
+          "table": {
+            "broken_wood_tool": 1
+          },
+          "name": "wood_stick",
+          "num": 1
+        }
+      ]
+    },
+    {
+      "key": "wood_pickaxe",
+      "table": [
+        {
+          "table": {
+            "wood_board": 2,
+            "wood_stick": 1
+          },
+          "name": "wood_pickaxe",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "wood_axe",
+      "table": [
+        {
+          "table": {
+            "wood_board": 2,
+            "wood_stick": 1
+          },
+          "name": "wood_axe",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "wood_shovel",
+      "table": [
+        {
+          "table": {
+            "wood_board": 1,
+            "wood_stick": 1
+          },
+          "name": "wood_shovel",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "wood_sword",
+      "table": [
+        {
+          "table": {
+            "wood_board": 2,
+            "wood_stick": 1
+          },
+          "name": "wood_sword",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "wood_hoe",
+      "table": [
+        {
+          "table": {
+            "wood_board": 1,
+            "wood_stick": 1
+          },
+          "name": "wood_hoe",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "wood_hammer",
+      "table": [
+        {
+          "table": {
+            "wood": 2,
+            "wood_stick": 1
+          },
+          "name": "wood_hammer",
+          "num": 1,
+          "time": 4.0
+        }
+      ]
+    },
+    {
+      "key": "lithic_core",
+      "table": [
+        {
+          "table": {
+            "flint": 1
+          },
+          "name": "lithic_core",
+          "num": 1,
+          "time": 5.0
+        }
+      ]
+    },
+    {
+      "key": "flint",
+      "table": [
+        {
+          "table": {
+            "flint_broken": 3
+          },
+          "name": "flint",
+          "num": 1,
+          "time": 5.0
+        }
+      ]
+    }
+  ],
+  "stone_age": [
+    {
+      "key": "craft_table",
+      "table": [
+        {
+          "table": {
+            "wood_board": 4
+          },
+          "name": "craft_table",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "flax_seed",
+      "table": [
+        {
+          "table": {
+            "flax": 1
+          },
+          "name": "flax_seed",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "plant_fibres",
+      "table": [
+        {
+          "table": {
+            "flax": 1
+          },
+          "name": "plant_fibres",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "rope",
+      "table": [
+        {
+          "table": {
+            "plant_fibres": 3
+          },
+          "name": "rope",
+          "num": 1,
+          "time": 2.0
+        }
+      ]
+    },
+    {
+      "key": "small_stone",
+      "table": [
+        {
+          "table": {
+            "broken_stone_tool": 1
+          },
+          "name": "small_stone",
+          "num": 1,
+          "time": 1.0
+        }
+      ]
+    },
+    {
+      "key": "stone_pickaxe",
+      "table": [
+        {
+          "table": {
+            "stone_broken": 2,
+            "wood_stick": 1,
+            "rope": 1,
+            "lithic_core": 1
+          },
+          "name": "stone_pickaxe",
+          "num": 1,
+          "time": 6.0
+        }
+      ]
+    },
+    {
+      "key": "stone_axe",
+      "table": [
+        {
+          "table": {
+            "stone_broken": 2,
+            "wood_stick": 1,
+            "rope": 1,
+            "lithic_core": 1
+          },
+          "name": "stone_axe",
+          "num": 1,
+          "time": 6.0
+        }
+      ]
+    },
+    {
+      "key": "stone_shovel",
+      "table": [
+        {
+          "table": {
+            "stone_broken": 1,
+            "wood_stick": 1,
+            "rope": 1,
+            "lithic_core": 1
+          },
+          "name": "stone_shovel",
+          "num": 1,
+          "time": 6.0
+        }
+      ]
+    },
+    {
+      "key": "stone_sword",
+      "table": [
+        {
+          "table": {
+            "stone_broken": 2,
+            "wood_stick": 1,
+            "rope": 1,
+            "lithic_core": 1
+          },
+          "name": "stone_sword",
+          "num": 1,
+          "time": 6.0
+        }
+      ]
+    },
+    {
+      "key": "stone_hoe",
+      "table": [
+        {
+          "table": {
+            "stone_broken": 1,
+            "wood_stick": 1,
+            "rope": 1,
+            "lithic_core": 1
+          },
+          "name": "stone_hoe",
+          "num": 1,
+          "time": 6.0
+        }
+      ]
+    },
+    {
+      "key": "stone_hammer",
+      "table": [
+        {
+          "table": {
+            "stone_broken": 5,
+            "wood_stick": 1,
+            "rope": 2,
+            "lithic_core": 1
+          },
+          "name": "stone_hammer",
+          "num": 1,
+          "time": 10.0
+        }
+      ]
+    }
+  ]
+}

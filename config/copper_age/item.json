@@ -1,0 +1,50 @@
+{
+  "item": [
+    {
+      "key": "copper_ignot",
+      "name": "",
+      "img": "copper_age/copper_ignot",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": 9,
+      "max": 4
+    },
+    {
+      "key": "copper_nugget",
+      "name": "",
+      "img": "copper_age/copper_nugget",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": 0.0,
+      "max": 0.0
+    },
+    {
+      "key": "copper_ore_crushed",
+      "name": "",
+      "img": "copper_age/copper_ore_crushed",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": 9.5,
+      "max": 4
+    },
+    {
+      "key": "copper_ore_crushed_small",
+      "name": "",
+      "img": "copper_age/copper_ore_crushed_small",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": 3,
+      "max": 8
+    }
+  ],
+  "plant": [],
+  "food": []
+}

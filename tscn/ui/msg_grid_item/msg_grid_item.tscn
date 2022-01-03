@@ -1,0 +1,114 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://tscn/ui/bg1.tres" type="StyleBox" id=1]
+[ext_resource path="res://tscn/ui/msg_grid_item/msg_grid_item.gd" type="Script" id=2]
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=3]
+[ext_resource path="res://tscn/ui/msg/hp_msg_bg.tres" type="StyleBox" id=4]
+[ext_resource path="res://assets/font/smallest_12.tres" type="DynamicFont" id=5]
+
+[node name="msg_grid_item" type="Panel"]
+self_modulate = Color( 1, 1, 1, 0.466667 )
+margin_left = -100.0
+margin_top = -115.0
+margin_right = 100.0
+margin_bottom = -5.0
+mouse_filter = 2
+custom_styles/panel = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="Label" parent="."]
+margin_left = 1.0
+margin_top = 2.0
+margin_right = 201.0
+margin_bottom = 21.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 3 )
+text = "泥土"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="info" type="Label" parent="."]
+margin_left = 7.0
+margin_top = 21.0
+margin_right = 190.0
+margin_bottom = 110.0
+custom_colors/font_color = Color( 0.921569, 0.921569, 0.921569, 1 )
+custom_fonts/font = ExtResource( 5 )
+text = "阿松大阿松大阿萨的阿松大阿松大"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hp_bg" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.470588 )
+margin_top = 106.36
+margin_right = 199.0
+margin_bottom = 129.36
+mouse_filter = 2
+custom_styles/panel = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hp" type="Label" parent="."]
+margin_left = 12.0
+margin_top = 106.36
+margin_right = 184.0
+margin_bottom = 129.36
+custom_fonts/font = ExtResource( 5 )
+text = "99  /  99"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vbox" type="VBoxContainer" parent="."]
+visible = false
+margin_left = 1.0
+margin_top = -26.6047
+margin_right = 200.0
+margin_bottom = 175.395
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hp" type="Panel" parent="vbox"]
+margin_right = 199.0
+margin_bottom = 23.0
+rect_min_size = Vector2( 199, 23 )
+mouse_filter = 2
+custom_styles/panel = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="Label" parent="vbox/hp"]
+margin_top = 1.8354
+margin_right = 199.0
+margin_bottom = 20.8354
+rect_min_size = Vector2( 172.001, 19 )
+custom_fonts/font = ExtResource( 3 )
+text = "99  /  99"
+align = 1
+valign = 1
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

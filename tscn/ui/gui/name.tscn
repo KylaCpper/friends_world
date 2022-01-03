@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tscn/ui/gui/name.gd" type="Script" id=1]
+[ext_resource path="res://tscn/ui/bg1.tres" type="StyleBox" id=2]
+
+[node name="name" type="ViewportContainer"]
+margin_left = -630.0
+margin_top = 242.0
+margin_right = -525.0
+margin_bottom = 271.0
+stretch = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="viewport" type="Viewport" parent="."]
+size = Vector2( 105, 29 )
+size_override_stretch = true
+transparent_bg = true
+handle_input_locally = false
+disable_3d = true
+usage = 0
+render_target_v_flip = true
+render_target_update_mode = 3
+shadow_atlas_quad_0 = 0
+shadow_atlas_quad_1 = 0
+shadow_atlas_quad_2 = 0
+shadow_atlas_quad_3 = 0
+
+[node name="name" type="Panel" parent="viewport"]
+self_modulate = Color( 1, 1, 1, 0.627451 )
+margin_left = 3.0
+margin_top = 5.0
+margin_right = 96.0
+margin_bottom = 20.0
+mouse_filter = 2
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="Label" parent="viewport/name"]
+margin_left = 2.0
+margin_right = 91.0
+margin_bottom = 15.0
+align = 1
+valign = 1
+clip_text = true

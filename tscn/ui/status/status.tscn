@@ -1,0 +1,491 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://assets/font/smallest_12.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/img/ui/status/satiety.png" type="Texture" id=2]
+[ext_resource path="res://assets/img/ui/status/water.png" type="Texture" id=3]
+[ext_resource path="res://assets/img/ui/status/body1.png" type="Texture" id=4]
+[ext_resource path="res://tscn/ui/status/status.gd" type="Script" id=5]
+[ext_resource path="res://tscn/ui/status/nutrition.gd" type="Script" id=6]
+[ext_resource path="res://tscn/ui/status/buff.gd" type="Script" id=7]
+[ext_resource path="res://theme1.tres" type="Theme" id=8]
+[ext_resource path="res://assets/img/ui/status/ir.png" type="Texture" id=9]
+[ext_resource path="res://assets/img/ui/status/phytonutrients.png" type="Texture" id=10]
+[ext_resource path="res://assets/img/ui/status/protein.png" type="Texture" id=11]
+[ext_resource path="res://assets/img/ui/status/body4.png" type="Texture" id=12]
+[ext_resource path="res://assets/img/ui/pro/pro1.png" type="Texture" id=13]
+[ext_resource path="res://tscn/ui/pro/pro2.tres" type="StyleBox" id=14]
+[ext_resource path="res://assets/img/ui/status/body2.png" type="Texture" id=15]
+[ext_resource path="res://assets/img/ui/status/body3.png" type="Texture" id=16]
+[ext_resource path="res://assets/img/ui/status/body5.png" type="Texture" id=17]
+[ext_resource path="res://assets/img/ui/status/Whiteboard.png" type="Texture" id=18]
+[ext_resource path="res://assets/img/ui/status/health.png" type="Texture" id=19]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
+modulate_color = Color( 1, 0.372549, 0.156863, 1 )
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
+modulate_color = Color( 0.819608, 0.517647, 0, 1 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
+modulate_color = Color( 0, 0.764706, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 0.203922 )
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
+modulate_color = Color( 1, 0.713726, 0.435294, 1 )
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
+modulate_color = Color( 0.541176, 1, 0, 1 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 13 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 12.0
+margin_right = 12.0
+margin_top = 12.0
+margin_bottom = 12.0
+modulate_color = Color( 1, 0.486275, 0.486275, 1 )
+
+[node name="status" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="hp" type="Node2D" parent="."]
+position = Vector2( 66, 21.9182 )
+
+[node name="head" type="Sprite" parent="hp"]
+self_modulate = Color( 0.2, 0.2, 0.2, 1 )
+position = Vector2( 1, 4 )
+texture = ExtResource( 4 )
+centered = false
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/head"]
+modulate = Color( 0.207843, 0.207843, 0.207843, 0.705882 )
+position = Vector2( 4, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="armor" type="Sprite" parent="hp/head"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 4, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="body" type="Sprite" parent="hp"]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 1 )
+position = Vector2( 1, 32 )
+texture = ExtResource( 15 )
+centered = false
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/body"]
+modulate = Color( 0.752941, 0.27451, 0.27451, 0.705882 )
+position = Vector2( 4, 4 )
+scale = Vector2( 1, 1.25889 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 32 )
+
+[node name="armor" type="Sprite" parent="hp/body"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 3.70274, 4 )
+scale = Vector2( 1.01239, 1.67852 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="arm_left" type="Sprite" parent="hp"]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 1 )
+position = Vector2( -27.1072, 36 )
+texture = ExtResource( 16 )
+centered = false
+flip_h = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/arm_left"]
+modulate = Color( 0.258824, 0.741176, 0.411765, 0.705882 )
+position = Vector2( 19.8099, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 8, 32 )
+
+[node name="armor" type="Sprite" parent="hp/arm_left"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 19.8099, 4 )
+scale = Vector2( 0.333335, 1.33333 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="arm_right" type="Sprite" parent="hp"]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 1 )
+position = Vector2( 29, 36 )
+texture = ExtResource( 16 )
+centered = false
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/arm_right"]
+modulate = Color( 0.717647, 0.752941, 0.27451, 0.705882 )
+position = Vector2( 4, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 8, 32 )
+
+[node name="armor" type="Sprite" parent="hp/arm_right"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 4, 4 )
+scale = Vector2( 0.333335, 1.33333 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="leg_left" type="Sprite" parent="hp"]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 1 )
+position = Vector2( 0.702736, 76.2845 )
+texture = ExtResource( 12 )
+centered = false
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/leg_left"]
+modulate = Color( 0.752941, 0.552941, 0.27451, 0.705882 )
+position = Vector2( 4, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 8, 28 )
+
+[node name="armor" type="Sprite" parent="hp/leg_left"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 4, 4 )
+scale = Vector2( 0.333333, 1.16665 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="leg_right" type="Sprite" parent="hp"]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 1 )
+position = Vector2( 16.75, 76.2845 )
+texture = ExtResource( 12 )
+centered = false
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/leg_right"]
+modulate = Color( 0.258824, 0.741176, 0.411765, 0.784314 )
+position = Vector2( 4, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 8, 28 )
+
+[node name="armor" type="Sprite" parent="hp/leg_right"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 4, 4 )
+scale = Vector2( 0.333333, 1.16665 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="foot_left" type="Sprite" parent="hp"]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 1 )
+position = Vector2( 0.887672, 108.284 )
+texture = ExtResource( 17 )
+centered = false
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/foot_left"]
+modulate = Color( 0.258824, 0.741176, 0.411765, 0.784314 )
+position = Vector2( 4, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 8, 8 )
+
+[node name="armor" type="Sprite" parent="hp/foot_left"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 4, 4 )
+scale = Vector2( 0.333333, 0.333333 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="foot_right" type="Sprite" parent="hp"]
+self_modulate = Color( 0.180392, 0.180392, 0.180392, 1 )
+position = Vector2( 0.702736, 108.284 )
+texture = ExtResource( 17 )
+centered = false
+flip_h = true
+region_rect = Rect2( 0, 0, 32, 32 )
+
+[node name="sprite" type="Sprite" parent="hp/foot_right"]
+modulate = Color( 0.258824, 0.741176, 0.411765, 0.784314 )
+position = Vector2( 20.125, 4 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 8, 8 )
+
+[node name="armor" type="Sprite" parent="hp/foot_right"]
+modulate = Color( 0.756863, 0.756863, 0.756863, 0 )
+position = Vector2( 20.0473, 4 )
+scale = Vector2( 0.34375, 0.333333 )
+texture = ExtResource( 18 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4, 4, 24, 24 )
+
+[node name="tween" type="Tween" parent="hp"]
+
+[node name="health" type="ProgressBar" parent="."]
+margin_left = 66.7027
+margin_top = 478.111
+margin_right = 186.703
+margin_bottom = 503.111
+mouse_filter = 2
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = ExtResource( 14 )
+custom_fonts/font = ExtResource( 1 )
+max_value = 10.0
+value = 5.4
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="TextureRect" parent="health"]
+margin_left = -42.2
+margin_top = -3.8891
+margin_right = -10.2
+margin_bottom = 28.1109
+hint_tooltip = "satiety_ui"
+theme = ExtResource( 8 )
+texture = ExtResource( 19 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="health"]
+
+[node name="satiety" type="ProgressBar" parent="."]
+margin_left = 66.0
+margin_top = 522.0
+margin_right = 186.0
+margin_bottom = 547.0
+mouse_filter = 2
+custom_styles/fg = SubResource( 2 )
+custom_styles/bg = ExtResource( 14 )
+custom_fonts/font = ExtResource( 1 )
+max_value = 10.0
+value = 5.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="TextureRect" parent="satiety"]
+margin_left = -42.2
+margin_top = -3.8891
+margin_right = -10.2
+margin_bottom = 28.1109
+hint_tooltip = "satiety_ui"
+theme = ExtResource( 8 )
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="satiety"]
+
+[node name="thirst" type="ProgressBar" parent="."]
+margin_left = 66.0
+margin_top = 565.0
+margin_right = 186.0
+margin_bottom = 590.0
+mouse_filter = 2
+custom_styles/fg = SubResource( 3 )
+custom_styles/bg = ExtResource( 14 )
+custom_fonts/font = ExtResource( 1 )
+max_value = 10.0
+value = 10.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="TextureRect" parent="thirst"]
+margin_left = -42.2
+margin_top = -4.59619
+margin_right = -10.2
+margin_bottom = 27.4038
+hint_tooltip = "thirst_ui"
+theme = ExtResource( 8 )
+texture = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="thirst"]
+
+[node name="nutrition" type="Node2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="bg" type="Panel" parent="nutrition"]
+visible = false
+margin_right = 1034.0
+margin_bottom = 606.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="protein" type="ProgressBar" parent="nutrition"]
+margin_left = 831.0
+margin_top = 63.0
+margin_right = 951.0
+margin_bottom = 88.0
+mouse_filter = 2
+custom_styles/fg = SubResource( 5 )
+custom_styles/bg = ExtResource( 14 )
+custom_fonts/font = ExtResource( 1 )
+max_value = 10.0
+value = 5.5
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="TextureRect" parent="nutrition/protein"]
+margin_left = -41.6789
+margin_top = -5.0818
+margin_right = -9.67889
+margin_bottom = 26.9182
+hint_tooltip = "protein_ui"
+theme = ExtResource( 8 )
+texture = ExtResource( 11 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="nutrition/protein"]
+
+[node name="phytonutrients" type="ProgressBar" parent="nutrition"]
+margin_left = 831.0
+margin_top = 116.0
+margin_right = 951.0
+margin_bottom = 141.0
+mouse_filter = 2
+custom_styles/fg = SubResource( 6 )
+custom_styles/bg = ExtResource( 14 )
+custom_fonts/font = ExtResource( 1 )
+max_value = 10.0
+value = 5.5
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="TextureRect" parent="nutrition/phytonutrients"]
+margin_left = -41.6789
+margin_top = -3.64799
+margin_right = -9.67889
+margin_bottom = 28.352
+hint_tooltip = "phytonutrients_ui"
+theme = ExtResource( 8 )
+texture = ExtResource( 10 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="nutrition/phytonutrients"]
+
+[node name="ir" type="ProgressBar" parent="nutrition"]
+margin_left = 830.0
+margin_top = 170.0
+margin_right = 951.0
+margin_bottom = 195.0
+mouse_filter = 2
+custom_styles/fg = SubResource( 7 )
+custom_styles/bg = ExtResource( 14 )
+custom_fonts/font = ExtResource( 1 )
+max_value = 10.0
+value = 5.5
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="TextureRect" parent="nutrition/ir"]
+margin_left = -40.6789
+margin_top = -5.5
+margin_right = -8.67889
+margin_bottom = 26.5
+hint_tooltip = "ir_ui"
+theme = ExtResource( 8 )
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tween" type="Tween" parent="nutrition/ir"]
+
+[node name="buff" type="VBoxContainer" parent="."]
+margin_left = 758.0
+margin_top = 216.0
+margin_right = 998.0
+margin_bottom = 346.0
+mouse_filter = 2
+custom_constants/separation = 10
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

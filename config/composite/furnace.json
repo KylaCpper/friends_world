@@ -1,0 +1,117 @@
+{
+  "stone_furnace": [
+    {
+      "key": "charcoal",
+      "table": [
+        "wood"
+      ],
+      "time": 11,
+      "export": [
+        {
+          "name": "charcoal",
+          "num": 1
+        }
+      ]
+    },
+    {
+      "key": "stone",
+      "table": [
+        "stone"
+      ],
+      "time": 11,
+      "export": [
+        {
+          "name": "stone",
+          "num": 5,
+          "pro": 100
+        },
+        {
+          "name": "stone",
+          "num": 1
+        }
+      ]
+    }
+  ],
+  "stone_blast_furnace": [
+    {
+      "key": "stone",
+      "table": [
+        "stone",
+        "stone"
+      ],
+      "time": 11,
+      "export": [
+        {
+          "name": "stone",
+          "num": 5,
+          "pro": 100
+        },
+        {
+          "name": "stone",
+          "num": 1
+        }
+      ]
+    },
+    {
+      "key": "charcoal",
+      "table": [
+        "wood"
+      ],
+      "time": 18,
+      "export": [
+        {
+          "name": "charcoal",
+          "num": 1
+        }
+      ]
+    },
+    {
+      "key": "copper_ignot",
+      "table": [
+        "copper_ore"
+      ],
+      "time": 20,
+      "export": [
+        {
+          "name": "copper_ignot",
+          "num": 1
+        }
+      ]
+    },
+    {
+      "key": "copper_ignot1",
+      "table": [
+        "copper_ore_crushed"
+      ],
+      "time": 15,
+      "export": [
+        {
+          "name": "copper_ignot",
+          "num": 1
+        },
+        {
+          "name": "copper_nugget",
+          "num": 1
+        }
+      ]
+    },
+    {
+      "key": "copper_ignot2",
+      "table": [
+        "copper_ore_crushed_small"
+      ],
+      "time": 13,
+      "export": [
+        {
+          "name": "copper_nugget",
+          "num": 3
+        },
+        {
+          "name": "copper_nugget",
+          "num": 1,
+          "pro": 30
+        }
+      ]
+    }
+  ]
+}

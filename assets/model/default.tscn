@@ -1,0 +1,119 @@
+[gd_scene load_steps=9 format=2]
+
+[sub_resource type="SpatialMaterial" id=1]
+resource_name = "1"
+metallic_specular = 0.0
+
+[sub_resource type="SpatialMaterial" id=2]
+resource_name = "1"
+metallic_specular = 0.0
+
+[sub_resource type="SpatialMaterial" id=3]
+resource_name = "1"
+metallic_specular = 0.0
+
+[sub_resource type="SpatialMaterial" id=4]
+resource_name = "1"
+metallic_specular = 0.0
+
+[sub_resource type="SpatialMaterial" id=5]
+resource_name = "1"
+metallic_specular = 0.0
+
+[sub_resource type="SpatialMaterial" id=6]
+resource_name = "1"
+metallic_specular = 0.0
+
+[sub_resource type="ArrayMesh" id=7]
+surfaces/0 = {
+"aabb": AABB( -1, 1, -1, 2.00001, 1.00136e-05, 2 ),
+"array_data": PoolByteArray( 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 0, 0, 0, 0, 129, 127, 255, 59, 255, 59, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 127, 0, 0, 0, 0, 129, 127, 255, 59, 146, 6, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 0, 0, 0, 0, 129, 127, 141, 6, 142, 6, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 127, 0, 0, 0, 0, 129, 127, 138, 6, 255, 59 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 6,
+"material": SubResource( 1 ),
+"name": "5",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+surfaces/1 = {
+"aabb": AABB( -1, -1, 1, 2.00001, 2, 1.00136e-05 ),
+"array_data": PoolByteArray( 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 255, 59, 255, 59, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 255, 59, 140, 6, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 139, 6, 146, 6, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 127, 0, 127, 0, 0, 127, 143, 6, 255, 59 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 6,
+"material": SubResource( 2 ),
+"name": "4",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+surfaces/2 = {
+"aabb": AABB( -1, -1, -1, 1.00136e-05, 2, 2.00001 ),
+"array_data": PoolByteArray( 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 129, 0, 0, 0, 0, 0, 127, 127, 255, 59, 255, 59, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 63, 129, 0, 0, 0, 0, 0, 127, 127, 255, 59, 144, 6, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 129, 0, 0, 0, 0, 0, 127, 127, 139, 6, 146, 6, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 129, 0, 0, 0, 0, 0, 127, 127, 144, 6, 255, 59 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 6,
+"material": SubResource( 3 ),
+"name": "3",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+surfaces/3 = {
+"aabb": AABB( -1, -1, -1, 2, 1.00136e-05, 2 ),
+"array_data": PoolByteArray( 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 0, 0, 0, 0, 127, 127, 141, 6, 144, 6, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 0, 129, 0, 0, 0, 0, 127, 127, 142, 6, 255, 59, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 0, 0, 0, 0, 127, 127, 255, 59, 255, 59, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 63, 0, 129, 0, 0, 0, 0, 127, 127, 255, 59, 142, 6 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 6,
+"material": SubResource( 4 ),
+"name": "6",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+surfaces/4 = {
+"aabb": AABB( 1, -1, -1, 1.00136e-05, 2, 2 ),
+"array_data": PoolByteArray( 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 60, 0, 60, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 127, 0, 0, 0, 0, 0, 129, 127, 0, 60, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63, 127, 0, 0, 0, 0, 0, 129, 127, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 63, 127, 0, 0, 0, 0, 0, 129, 127, 0, 0, 0, 60 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 6,
+"material": SubResource( 5 ),
+"name": "1",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+surfaces/5 = {
+"aabb": AABB( -1, -1, -1, 2, 2, 1.00136e-05 ),
+"array_data": PoolByteArray( 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 255, 59, 255, 59, 0, 0, 128, 191, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 255, 59, 145, 136, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 89, 5, 145, 136, 0, 0, 128, 63, 0, 0, 128, 191, 0, 0, 128, 191, 0, 0, 129, 0, 129, 0, 0, 127, 91, 5, 255, 59 ),
+"array_index_data": PoolByteArray( 0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 6,
+"material": SubResource( 6 ),
+"name": "2",
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 4
+}
+
+[sub_resource type="SpatialMaterial" id=8]
+resource_name = "1"
+metallic_specular = 0.0
+
+[node name="default" type="MeshInstance"]
+transform = Transform( 0.501, 0, 0, 0, 0.501, 0, 0, 0, 0.501, 0, 0, 0 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 4 )
+material/4 = SubResource( 5 )
+material/5 = SubResource( 6 )

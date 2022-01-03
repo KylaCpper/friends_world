@@ -1,0 +1,54 @@
+keys,en,zh
+ui,--------------------------------------,--------------------------------
+single_ui,Single,单人游戏
+multiplayer_ui,Multiplayer,多人游戏
+into_ui,Enter,进入世界
+create_world_ui,Create world,创建世界
+delete_ui,Delete world,删除世界
+directory_ui,Open directory,打开目录
+is_delete_save_ui,Do you want to delete the world?,是否要删除世界?
+deleting_ui,Delete the world...,删除世界中...
+seed_ui:,Seed,种子:
+world_name_ui,World name,世界名称:
+random,Random,随机
+language_ui:,Language:,语言:
+main_sound_ui:,Master volume:,主音量:
+music_ui:,Music volume:,背景音量:
+sound_ui:,Sound effect:,音效:
+cancel_ui,Cancel,取消
+home_ui,Save and exit,保存并退出
+option_ui,Option,设置
+exit_ui,Exit,退出游戏
+sure_ui,Sure,确定
+rebirtht_ui,rebirtht,重生
+you_dead_ui,you are dead,你死了
+full_screen_ui,Full screen,全屏
+give_ui,Give,给与
+pos_ui,Send to,传送到
+move_ui,Move,移动
+open_op,open op,开op
+close_op,close op,关op
+connect_ui,connect,连接
+connecting_ui,connecting,连接中
+connect_fail_ui,connect fail,连接失败
+create_server_ui,Open to LAN,对局域网开放
+err_net1_ui,LAN is on,已经开启
+connect_err_name,Already has the same name,已有同样名字
+name_ui,name:,名字:
+protein_ui,protein,蛋白质
+phytonutrients_ui,phytonutrients,植物营养素
+ir_ui,Insulin resistance,胰岛素抵抗
+hp_ui,hp,血
+satiety_ui,Satiety,饱腹
+thirst_ui,Body water,含水值
+add_entity,add entity,添加实体
+invalid_entity,invalid entity,无效的实体
+invalid_pos,invalid location,无效的位置
+energy_warning,Insufficient calorific value,热值不足
+calorific_ui,calorific value,热值
+eat1,Tired of eating a little,有点吃腻了
+eat2,Tired of eating,吃腻了
+eat3,Don't want to eat,不想吃了
+anvil_err1,Insufficient material to forge,材料不足，无法锻造
+anvil_err2,Need to use a hammer,需要使用锤子
+full_screen,full screen,全屏

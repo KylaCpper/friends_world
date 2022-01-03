@@ -1,0 +1,23 @@
+keys,en,zh
+malnutrition_buff,malnutrition,营养不良
+malnutrition_buff_info,Weak limbs,四肢无力
+diabetes_mild_buff,Insulin resistance(mild),胰岛素抵抗(轻度)
+diabetes_mild_buff_info,More hungry，slow nutrient absorption,更易饥饿，营养吸收缓慢
+diabetes_moderate_buff,Insulin resistance(moderate),胰岛素抵抗(中度)
+diabetes_moderate_buff_info,More hungry，slow nutrient absorption,更易饥饿，营养吸收缓慢
+diabetes_severe_buff,Insulin resistance(severe),胰岛素抵抗(重度)
+diabetes_severe_buff_info,Low resistance，More hungry，slow nutrient absorption,抵抗力低下，更易饥饿，营养吸收缓慢
+stomach_injuried_buff,Stomach bleeding,胃部出血
+stomach_injuried_buff_info,Hungry and thirsty faster,饿，渴的更快
+arm_left_injuried_buff,Destroyed left arm,左臂损坏
+arm_left_injuried_buff_info,Destroyed left arm,左臂损坏
+arm_right_injuried_buff,Destroyed right arm,右臂损坏
+arm_right_injuried_buff_info,Destroyed right arm,右臂损坏
+leg_left_injuried_buff,Destroyed left leg,左腿损坏
+leg_left_injuried_buff_info,Destroyed left leg,左腿损坏
+leg_right_injuried_buff,Destroyed right leg,右腿损坏
+leg_right_injuried_buff_info,Destroyed right leg,右腿损坏
+foot_left_injuried_buff,Destroyed left foot,左脚损坏
+foot_left_injuried_buff_info,Destroyed left foot,左脚损坏
+foot_right_injuried_buff,Destroyed right foot,右脚损坏
+foot_right_injuried_buff_info,Destroyed right foot,右脚损坏

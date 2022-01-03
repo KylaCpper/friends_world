@@ -1,0 +1,145 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://tscn/ui/button/button_default.tres" type="StyleBox" id=1]
+[ext_resource path="res://tscn/ui/button/button_hover.tres" type="StyleBox" id=2]
+[ext_resource path="res://tscn/ui/button/button_press.tres" type="StyleBox" id=3]
+[ext_resource path="res://tscn/ui/button/button_focus.tres" type="StyleBox" id=4]
+[ext_resource path="res://tscn/shaders/blur.tscn" type="PackedScene" id=5]
+[ext_resource path="res://tscn/ui/start/create_world_page.gd" type="Script" id=6]
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=7]
+[ext_resource path="res://tscn/ui/edit/bg.tres" type="StyleBox" id=8]
+[ext_resource path="res://tscn/ui/null.tres" type="StyleBox" id=9]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform float blur_amount : hint_range(0, 5);
+
+void fragment() {
+	COLOR = textureLod(SCREEN_TEXTURE, SCREEN_UV, blur_amount);
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/blur_amount = 1.0
+
+[sub_resource type="ImageTexture" id=3]
+flags = 0
+flags = 0
+size = Vector2( 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 0.411765 )
+
+[node name="create_world_page" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="blur" parent="." instance=ExtResource( 5 )]
+material = SubResource( 2 )
+texture = SubResource( 3 )
+
+[node name="bg" type="Panel" parent="."]
+margin_right = 1024.0
+margin_bottom = 602.0
+custom_styles/panel = SubResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="create" type="Button" parent="."]
+margin_left = 271.0
+margin_top = 460.0
+margin_right = 403.0
+margin_bottom = 502.0
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/normal = ExtResource( 1 )
+custom_fonts/font = ExtResource( 7 )
+text = "create_world_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel" type="Button" parent="."]
+margin_left = 614.0
+margin_top = 460.0
+margin_right = 746.0
+margin_bottom = 502.0
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/normal = ExtResource( 1 )
+custom_fonts/font = ExtResource( 7 )
+text = "cancel_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="seed" type="LineEdit" parent="."]
+margin_left = 186.0
+margin_top = 91.0
+margin_right = 327.0
+margin_bottom = 133.0
+custom_styles/focus = ExtResource( 9 )
+custom_styles/normal = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
+text = "1"
+align = 1
+context_menu_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="Label" parent="seed"]
+margin_left = -100.72
+margin_right = -28.7204
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 7 )
+text = "seed_ui:"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="seed"]
+margin_left = 165.0
+margin_right = 267.0
+margin_bottom = 42.0
+custom_styles/hover = ExtResource( 2 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 4 )
+custom_styles/normal = ExtResource( 1 )
+custom_fonts/font = ExtResource( 7 )
+text = "random"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="world_name" type="LineEdit" parent="."]
+margin_left = 721.0
+margin_top = 91.0
+margin_right = 862.0
+margin_bottom = 133.0
+custom_styles/focus = ExtResource( 9 )
+custom_styles/normal = ExtResource( 8 )
+custom_fonts/font = ExtResource( 7 )
+text = "world0"
+align = 1
+context_menu_enabled = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="Label" parent="world_name"]
+margin_left = -166.219
+margin_right = -33.2188
+margin_bottom = 40.0
+custom_fonts/font = ExtResource( 7 )
+text = "world_name_ui:"
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,314 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://tscn/ui/start/world_page.gd" type="Script" id=1]
+[ext_resource path="res://tscn/ui/button/button_default.tres" type="StyleBox" id=2]
+[ext_resource path="res://tscn/ui/button/button_hover.tres" type="StyleBox" id=3]
+[ext_resource path="res://tscn/ui/button/button_press.tres" type="StyleBox" id=4]
+[ext_resource path="res://tscn/ui/button/button_focus.tres" type="StyleBox" id=5]
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=6]
+[ext_resource path="res://tscn/shaders/blur.tscn" type="PackedScene" id=7]
+[ext_resource path="res://tscn/ui/start/create_world_page.tscn" type="PackedScene" id=8]
+[ext_resource path="res://tscn/ui/bg1.tres" type="StyleBox" id=9]
+[ext_resource path="res://theme.tres" type="Theme" id=10]
+[ext_resource path="res://tscn/ui/bg.tres" type="StyleBox" id=11]
+[ext_resource path="res://assets/font/smallest_24.tres" type="DynamicFont" id=12]
+[ext_resource path="res://tscn/ui/start/sure_page.gd" type="Script" id=13]
+[ext_resource path="res://tscn/ui/bg/bg.tres" type="StyleBox" id=14]
+[ext_resource path="res://tscn/ui/start/delete_wait_page.gd" type="Script" id=15]
+[ext_resource path="res://assets/img/ui/other/point.png" type="Texture" id=16]
+[ext_resource path="res://assets/img/ui/bg2.png" type="Texture" id=18]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.2, 0.2, 0.2, 0.196078 )
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 18 )
+region_rect = Rect2( 0, 0, 48, 48 )
+margin_left = 16.0
+margin_right = 16.0
+margin_top = 16.0
+margin_bottom = 16.0
+expand_margin_left = 6.0
+expand_margin_right = 6.0
+expand_margin_top = 6.0
+expand_margin_bottom = 6.0
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color( 1, 1, 1, 0.392157 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.2, 0.2, 0.2, 0.588235 )
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.184314, 0.184314, 0.184314, 0.705882 )
+
+[node name="world_page" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="blur" parent="." instance=ExtResource( 7 )]
+
+[node name="bg" type="Panel" parent="."]
+margin_right = 1024.0
+margin_bottom = 602.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="into" type="Button" parent="."]
+margin_left = 124.0
+margin_top = 451.0
+margin_right = 256.0
+margin_bottom = 493.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "into_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="create" type="Button" parent="."]
+margin_left = 345.0
+margin_top = 451.0
+margin_right = 477.0
+margin_bottom = 493.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "create_world_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel" type="Button" parent="."]
+margin_left = 555.0
+margin_top = 513.0
+margin_right = 687.0
+margin_bottom = 555.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "cancel_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="delete" type="Button" parent="."]
+margin_left = 754.0
+margin_top = 451.0
+margin_right = 886.0
+margin_bottom = 493.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "delete_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="open" type="Button" parent="."]
+margin_left = 754.0
+margin_top = 513.0
+margin_right = 886.0
+margin_bottom = 555.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "directory_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ItemList" type="ItemList" parent="."]
+margin_left = 94.0
+margin_top = 63.0
+margin_right = 926.0
+margin_bottom = 414.0
+theme = ExtResource( 10 )
+custom_styles/cursor = SubResource( 2 )
+custom_styles/selected_focus = ExtResource( 9 )
+custom_styles/bg_focus = SubResource( 3 )
+custom_styles/cursor_unfocused = SubResource( 4 )
+custom_styles/selected = SubResource( 5 )
+custom_styles/bg = ExtResource( 11 )
+custom_fonts/font = ExtResource( 6 )
+max_text_lines = 2
+fixed_icon_size = Vector2( 64, 64 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sure_page" type="Node2D" parent="."]
+visible = false
+script = ExtResource( 13 )
+
+[node name="bg" type="Panel" parent="sure_page"]
+margin_right = 1024.0
+margin_bottom = 602.0
+custom_styles/panel = SubResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg2" type="Panel" parent="sure_page"]
+margin_left = 159.0
+margin_top = 119.0
+margin_right = 869.0
+margin_bottom = 462.0
+custom_styles/panel = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sure" type="Button" parent="sure_page"]
+margin_left = 250.0
+margin_top = 389.0
+margin_right = 380.0
+margin_bottom = 431.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "sure_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel" type="Button" parent="sure_page"]
+margin_left = 627.0
+margin_top = 389.0
+margin_right = 757.0
+margin_bottom = 431.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 4 )
+custom_styles/focus = ExtResource( 5 )
+custom_styles/normal = ExtResource( 2 )
+custom_fonts/font = ExtResource( 6 )
+text = "cancel_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="sure_page"]
+margin_left = 186.0
+margin_top = 126.0
+margin_right = 830.0
+margin_bottom = 339.0
+custom_fonts/font = ExtResource( 12 )
+text = "is_delete_save_ui"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="delete_wait_page" type="Node2D" parent="sure_page"]
+script = ExtResource( 15 )
+
+[node name="bg" type="Panel" parent="sure_page/delete_wait_page"]
+margin_right = 1024.0
+margin_bottom = 602.0
+custom_styles/panel = SubResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="sure_page/delete_wait_page"]
+margin_left = 186.0
+margin_top = 98.9776
+margin_right = 830.0
+margin_bottom = 311.978
+custom_fonts/font = ExtResource( 12 )
+text = "deleting_ui"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point1" type="TextureRect" parent="sure_page/delete_wait_page"]
+margin_left = 372.0
+margin_top = 374.198
+margin_right = 388.0
+margin_bottom = 390.198
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point2" type="TextureRect" parent="sure_page/delete_wait_page"]
+margin_left = 418.0
+margin_top = 374.198
+margin_right = 434.0
+margin_bottom = 390.198
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point3" type="TextureRect" parent="sure_page/delete_wait_page"]
+margin_left = 464.789
+margin_top = 374.198
+margin_right = 480.789
+margin_bottom = 390.198
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point4" type="TextureRect" parent="sure_page/delete_wait_page"]
+margin_left = 510.181
+margin_top = 374.198
+margin_right = 526.181
+margin_bottom = 390.198
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point5" type="TextureRect" parent="sure_page/delete_wait_page"]
+margin_left = 558.366
+margin_top = 374.198
+margin_right = 574.366
+margin_bottom = 390.198
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point6" type="TextureRect" parent="sure_page/delete_wait_page"]
+margin_left = 611.44
+margin_top = 374.198
+margin_right = 627.44
+margin_bottom = 390.198
+texture = ExtResource( 16 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="create_world_page" parent="." instance=ExtResource( 8 )]
+visible = false

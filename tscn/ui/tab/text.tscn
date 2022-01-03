@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/font/smallest_12.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/img/ui/tab/wifi4.png" type="Texture" id=3]
+
+[node name="Label" type="Label"]
+margin_right = 174.0
+margin_bottom = 19.0
+custom_fonts/font = ExtResource( 1 )
+text = "xxxxxx"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="delty" type="Label" parent="."]
+modulate = Color( 0.941176, 0.360784, 0.360784, 1 )
+margin_left = 162.641
+margin_top = -0.0417271
+margin_right = 202.641
+margin_bottom = 20.9583
+custom_fonts/font = ExtResource( 2 )
+text = "111"
+align = 2
+valign = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="wifi" type="Sprite" parent="."]
+position = Vector2( 215.902, 7.80776 )
+texture = ExtResource( 3 )

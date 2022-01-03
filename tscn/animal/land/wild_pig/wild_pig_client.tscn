@@ -1,0 +1,152 @@
+[gd_scene load_steps=29 format=2]
+
+[ext_resource path="res://tscn/animal/land/wild_pig/Skeleton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://tscn/animal/land/wild_pig/AnimationPlayer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://tscn/animal/land/wild_pig/wild_pig_client.gd" type="Script" id=3]
+[ext_resource path="res://tscn/animal/land/wild_pig/eat_end.anim" type="Animation" id=4]
+[ext_resource path="res://tscn/animal/land/wild_pig/AnimationTree.gd" type="Script" id=5]
+[ext_resource path="res://tscn/animal/land/wild_pig/Skeleton.gd" type="Script" id=6]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.423224, 0.519611, 0.444279 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.551692, 0.921501, 0.876596 )
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "default"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "hurt"
+
+[sub_resource type="AnimationNodeAnimation" id=5]
+animation = "run"
+
+[sub_resource type="AnimationNodeAnimation" id=6]
+animation = "eating"
+
+[sub_resource type="AnimationNodeAnimation" id=7]
+animation = "eat"
+
+[sub_resource type="AnimationNodeAnimation" id=8]
+animation = "eat_end"
+
+[sub_resource type="AnimationNodeAnimation" id=9]
+animation = "atk"
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "dead"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "walk"
+
+[sub_resource type="AnimationNodeTimeScale" id=12]
+
+[sub_resource type="AnimationNodeTimeScale" id=13]
+
+[sub_resource type="AnimationNodeOneShot" id=14]
+
+[sub_resource type="AnimationNodeBlend2" id=15]
+
+[sub_resource type="AnimationNodeOneShot" id=16]
+filter_enabled = true
+filters = [ "body/Skeleton:body1", "body/Skeleton:head" ]
+
+[sub_resource type="AnimationNodeOneShot" id=17]
+filter_enabled = true
+filters = [ "body/Skeleton:body1", "body/Skeleton:head" ]
+
+[sub_resource type="AnimationNodeBlend2" id=18]
+filter_enabled = true
+filters = [ "body/Skeleton:body1", "body/Skeleton:head" ]
+
+[sub_resource type="AnimationNodeOneShot" id=19]
+
+[sub_resource type="AnimationNodeBlend2" id=20]
+
+[sub_resource type="AnimationNodeBlend2" id=21]
+
+[sub_resource type="AnimationNodeBlendTree" id=22]
+graph_offset = Vector2( 0, 129.5 )
+nodes/Animation/node = SubResource( 11 )
+nodes/Animation/position = Vector2( -80, 240 )
+"nodes/Animation 2/node" = SubResource( 3 )
+"nodes/Animation 2/position" = Vector2( 60, 100 )
+"nodes/Animation 3/node" = SubResource( 4 )
+"nodes/Animation 3/position" = Vector2( 1184, 224 )
+"nodes/Animation 4/node" = SubResource( 5 )
+"nodes/Animation 4/position" = Vector2( 440, 180 )
+"nodes/Animation 5/node" = SubResource( 6 )
+"nodes/Animation 5/position" = Vector2( 820, 180 )
+"nodes/Animation 6/node" = SubResource( 7 )
+"nodes/Animation 6/position" = Vector2( 20, 420 )
+"nodes/Animation 7/node" = SubResource( 8 )
+"nodes/Animation 7/position" = Vector2( 420, 440 )
+"nodes/Animation 8/node" = SubResource( 9 )
+"nodes/Animation 8/position" = Vector2( 740, 420 )
+"nodes/Animation 9/node" = SubResource( 10 )
+"nodes/Animation 9/position" = Vector2( 1520, 176 )
+nodes/TimeScale/node = SubResource( 13 )
+nodes/TimeScale/position = Vector2( 1184, 112 )
+"nodes/TimeScale 2/node" = SubResource( 12 )
+"nodes/TimeScale 2/position" = Vector2( 100, 240 )
+nodes/atk/node = SubResource( 14 )
+nodes/atk/position = Vector2( 940, 360 )
+nodes/dead/node = SubResource( 15 )
+nodes/dead/position = Vector2( 1700, 100 )
+nodes/eat_end/node = SubResource( 16 )
+nodes/eat_end/position = Vector2( 600, 360 )
+nodes/eat_start/node = SubResource( 17 )
+nodes/eat_start/position = Vector2( 240, 360 )
+nodes/eating/node = SubResource( 18 )
+nodes/eating/position = Vector2( 1000, 100 )
+nodes/hurt/node = SubResource( 19 )
+nodes/hurt/position = Vector2( 1344, 96 )
+nodes/output/position = Vector2( 2144, 224 )
+nodes/run/node = SubResource( 20 )
+nodes/run/position = Vector2( 620, 100 )
+nodes/walk/node = SubResource( 21 )
+nodes/walk/position = Vector2( 260, 100 )
+node_connections = [ "output", 0, "atk", "atk", 0, "eat_end", "atk", 1, "Animation 8", "eating", 0, "run", "eating", 1, "Animation 5", "run", 0, "walk", "run", 1, "Animation 4", "hurt", 0, "eating", "hurt", 1, "TimeScale", "dead", 0, "hurt", "dead", 1, "Animation 9", "walk", 0, "Animation 2", "walk", 1, "TimeScale 2", "TimeScale", 0, "Animation 3", "TimeScale 2", 0, "Animation", "eat_start", 0, "dead", "eat_start", 1, "Animation 6", "eat_end", 0, "eat_start", "eat_end", 1, "Animation 7" ]
+
+[node name="wild_pig_client" type="KinematicBody"]
+script = ExtResource( 3 )
+
+[node name="body" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.302695, 0, 0.0866743 )
+
+[node name="Skeleton" parent="body" instance=ExtResource( 1 )]
+script = ExtResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0225579, 1.40046, 0.94796 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00672716, 0.970159, -0.494808 )
+shape = SubResource( 2 )
+
+[node name="AnimationPlayer" parent="." instance=ExtResource( 2 )]
+anims/eat_end = ExtResource( 4 )
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource( 22 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+parameters/TimeScale/scale = 0.8
+"parameters/TimeScale 2/scale" = 2.0
+parameters/atk/active = false
+parameters/dead/blend_amount = 0.0
+parameters/eat_end/active = false
+parameters/eat_start/active = false
+parameters/eating/blend_amount = 0.0
+parameters/hurt/active = false
+parameters/run/blend_amount = 0.0
+parameters/walk/blend_amount = 0.0
+script = ExtResource( 5 )
+
+[node name="VoxelViewer" type="VoxelViewer" parent="."]
+view_distance = 8
+requires_visuals = false
+
+[editable path="body/Skeleton"]

@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://tscn/ui/bg1.tres" type="StyleBox" id=1]
+[ext_resource path="res://tscn/ui/tab/tab.gd" type="Script" id=2]
+[ext_resource path="res://tscn/ui/tab/text.tscn" type="PackedScene" id=3]
+
+[node name="tab" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="bg" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.592157 )
+margin_left = 387.0
+margin_top = 107.0
+margin_right = 638.0
+margin_bottom = 490.0
+mouse_filter = 2
+custom_styles/panel = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vbox" type="VBoxContainer" parent="."]
+margin_left = 401.0
+margin_top = 117.0
+margin_right = 551.0
+margin_bottom = 453.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" parent="vbox" instance=ExtResource( 3 )]
+margin_right = 150.0
+
+[node name="Label2" parent="vbox" instance=ExtResource( 3 )]
+margin_top = 23.0
+margin_right = 150.0
+margin_bottom = 42.0
+
+[node name="Label3" parent="vbox" instance=ExtResource( 3 )]
+margin_top = 46.0
+margin_right = 150.0
+margin_bottom = 65.0
+
+[node name="Label4" parent="vbox" instance=ExtResource( 3 )]
+margin_top = 69.0
+margin_right = 150.0
+margin_bottom = 88.0

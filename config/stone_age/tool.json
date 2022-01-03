@@ -1,0 +1,126 @@
+{
+  "tool": [
+    {
+      "key": "stone_pickaxe",
+      "name": "",
+      "img": "stone_age/stone_pickaxe",
+      "tool": "pickaxe",
+      "lv": 1,
+      "hp": 40,
+      "speed": 1.7,
+      "atk": 2,
+      "damage": [
+        {
+          "name": "broken_stone_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "stone_shovel",
+      "name": "",
+      "img": "stone_age/stone_shovel",
+      "tool": "shovel",
+      "lv": 1,
+      "hp": 40,
+      "speed": 1.7,
+      "atk": 2,
+      "damage": [
+        {
+          "name": "broken_stone_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "stone_axe",
+      "name": "",
+      "img": "stone_age/stone_axe",
+      "tool": "axe",
+      "lv": 1,
+      "hp": 40,
+      "speed": 1.7,
+      "atk": 2,
+      "damage": [
+        {
+          "name": "broken_stone_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "stone_sword",
+      "name": "",
+      "img": "stone_age/stone_sword",
+      "tool": "sword",
+      "lv": 1,
+      "hp": 40,
+      "speed": 1.7,
+      "atk": 3,
+      "damage": [
+        {
+          "name": "broken_stone_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "stone_hoe",
+      "name": "",
+      "img": "stone_age/stone_hoe",
+      "tool": "hoe",
+      "lv": 1,
+      "hp": 40,
+      "speed": 1.7,
+      "atk": 2,
+      "damage": [
+        {
+          "name": "broken_stone_tool"
+        }
+      ],
+      "script": "base/tool/hoe",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "stone_hammer",
+      "name": "",
+      "img": "stone_age/stone_hammer",
+      "tool": [
+        "hammer",
+        "pickaxe"
+      ],
+      "lv": 1,
+      "hp": 70,
+      "speed": 2,
+      "atk": 3,
+      "damage": [
+        {
+          "name": "broken_stone_tool",
+          "stop": 0
+        },
+        {
+          "name": "small_stone",
+          "pro": 80
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ]
+}

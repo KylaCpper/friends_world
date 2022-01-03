@@ -1,0 +1,103 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://tscn/control/left.gd" type="Script" id=1]
+[ext_resource path="res://tscn/control/right.gd" type="Script" id=2]
+[ext_resource path="res://tscn/control/right_handle.png" type="Texture" id=3]
+[ext_resource path="res://tscn/control/right_arrow.png" type="Texture" id=4]
+[ext_resource path="res://tscn/control/left_handle.png" type="Texture" id=5]
+[ext_resource path="res://tscn/control/left_arrow.png" type="Texture" id=6]
+
+[sub_resource type="Animation" id=1]
+resource_name = "hide"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("handle:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "hide"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("handle:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="control" type="Node2D"]
+
+[node name="left" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="Panel" parent="left"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_top = 624.0
+margin_right = 864.0
+margin_bottom = 976.0
+
+[node name="handle" type="Sprite" parent="left"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 672, 704 )
+scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 5 )
+region_rect = Rect2( -25, -28, 156, 141 )
+
+[node name="arrow" type="Sprite" parent="left/handle"]
+modulate = Color( 1, 1, 1, 0.784314 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+
+[node name="ani" type="AnimationPlayer" parent="left"]
+anims/hide = SubResource( 1 )
+
+[node name="right" type="Control" parent="."]
+margin_left = 603.876
+margin_right = 643.876
+margin_bottom = 40.0
+mouse_filter = 2
+script = ExtResource( 2 )
+
+[node name="bg" type="Panel" parent="right"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 564.124
+margin_top = 624.0
+margin_right = 1314.12
+margin_bottom = 1074.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="handle" type="Sprite" parent="right"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 644.124, 704 )
+texture = ExtResource( 3 )
+region_rect = Rect2( -25, -28, 156, 141 )
+
+[node name="arrow" type="Sprite" parent="right/handle"]
+self_modulate = Color( 1, 1, 1, 0.705882 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="ani" type="AnimationPlayer" parent="right"]
+anims/hide = SubResource( 2 )

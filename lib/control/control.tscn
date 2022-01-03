@@ -1,0 +1,293 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://lib/control/left.gd" type="Script" id=1]
+[ext_resource path="res://lib/control/right.gd" type="Script" id=2]
+[ext_resource path="res://lib/control/jump2.png" type="Texture" id=3]
+[ext_resource path="res://lib/control/control2.png" type="Texture" id=4]
+[ext_resource path="res://lib/control/jump.gd" type="Script" id=5]
+[ext_resource path="res://lib/control/control1.png" type="Texture" id=6]
+[ext_resource path="res://lib/control/jump1.png" type="Texture" id=7]
+[ext_resource path="res://lib/control/control3.png" type="Texture" id=8]
+[ext_resource path="res://lib/control/control.gd" type="Script" id=9]
+[ext_resource path="res://lib/control/bag1.png" type="Texture" id=10]
+[ext_resource path="res://lib/control/bag2.png" type="Texture" id=11]
+[ext_resource path="res://lib/control/return1.png" type="Texture" id=12]
+[ext_resource path="res://lib/control/return2.png" type="Texture" id=13]
+[ext_resource path="res://lib/control/enter2.png" type="Texture" id=14]
+[ext_resource path="res://lib/control/enter1.png" type="Texture" id=15]
+[ext_resource path="res://lib/control/shift2.png" type="Texture" id=16]
+[ext_resource path="res://lib/control/shift1.png" type="Texture" id=17]
+
+[sub_resource type="Animation" id=1]
+resource_name = "hide"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("handle:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "hide"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/path = NodePath("handle:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="control" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="left" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="handle" type="Sprite" parent="left"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 194.227, 459.829 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 6 )
+region_rect = Rect2( -25, -28, 156, 141 )
+
+[node name="arrow" type="Sprite" parent="left/handle"]
+modulate = Color( 1, 1, 1, 0.784314 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="Control" type="Control" parent="left/handle"]
+margin_left = -38.0
+margin_top = -36.0
+margin_right = 38.0
+margin_bottom = 35.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ani" type="AnimationPlayer" parent="left"]
+anims/hide = SubResource( 1 )
+
+[node name="left2" type="Control" parent="."]
+visible = false
+margin_left = 198.214
+margin_top = 460.611
+margin_right = 238.214
+margin_bottom = 500.611
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="handle" type="Sprite" parent="left2"]
+position = Vector2( 3.31291, -2.96451 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 4 )
+region_rect = Rect2( -25, -28, 156, 141 )
+
+[node name="bg" type="Control" parent="left2"]
+margin_left = -86.0
+margin_top = -91.0
+margin_right = 83.0
+margin_bottom = 76.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="right" type="TextureRect" parent="left2"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = 16.1459
+margin_top = -55.2458
+margin_right = 116.146
+margin_bottom = 44.7542
+mouse_filter = 2
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="left2/right"]
+position = Vector2( 73.3197, 47.8163 )
+rotation = 1.5708
+scale = Vector2( 4, 4 )
+texture = ExtResource( 8 )
+
+[node name="left" type="TextureRect" parent="left2"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = -121.084
+margin_top = -55.4455
+margin_right = -21.0838
+margin_bottom = 44.5545
+mouse_filter = 2
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="left2/left"]
+position = Vector2( 28.5403, 49.4005 )
+rotation = 1.5708
+scale = Vector2( 4, -4 )
+texture = ExtResource( 8 )
+
+[node name="up" type="TextureRect" parent="left2"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = -55.7865
+margin_top = -121.36
+margin_right = 44.2135
+margin_bottom = -21.3603
+mouse_filter = 2
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="left2/up"]
+position = Vector2( 57.9423, 31.015 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 8 )
+
+[node name="down" type="TextureRect" parent="left2"]
+modulate = Color( 1, 1, 1, 0.784314 )
+margin_left = -55.7886
+margin_top = 16.1674
+margin_right = 44.2114
+margin_bottom = 116.167
+mouse_filter = 2
+expand = true
+stretch_mode = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="left2/down"]
+position = Vector2( 57.102, 69.7101 )
+scale = Vector2( 4, -4 )
+texture = ExtResource( 8 )
+
+[node name="right" type="Control" parent="."]
+margin_left = 603.876
+margin_right = 643.876
+margin_bottom = 40.0
+mouse_filter = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="handle" type="Sprite" parent="right"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 178.335, 400.499 )
+texture = ExtResource( 4 )
+region_rect = Rect2( -25, -28, 156, 141 )
+
+[node name="arrow" type="Sprite" parent="right/handle"]
+self_modulate = Color( 1, 1, 1, 0.705882 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 4 )
+
+[node name="ani" type="AnimationPlayer" parent="right"]
+anims/hide = SubResource( 2 )
+
+[node name="jump" type="TextureButton" parent="."]
+margin_left = 905.157
+margin_top = 360.499
+margin_right = 969.157
+margin_bottom = 424.499
+mouse_filter = 2
+toggle_mode = true
+texture_normal = ExtResource( 7 )
+texture_pressed = ExtResource( 3 )
+expand = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="shift" type="TextureButton" parent="."]
+margin_left = 905.157
+margin_top = 440.499
+margin_right = 969.157
+margin_bottom = 504.499
+rect_pivot_offset = Vector2( 32, 32 )
+mouse_filter = 2
+toggle_mode = true
+texture_normal = ExtResource( 17 )
+texture_pressed = ExtResource( 16 )
+expand = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+key = "shift"
+
+[node name="bag" type="TextureButton" parent="."]
+margin_left = 905.157
+margin_top = 244.294
+margin_right = 969.157
+margin_bottom = 308.294
+mouse_filter = 2
+toggle_mode = true
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+expand = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+key = "e"
+
+[node name="return" type="TextureButton" parent="."]
+margin_left = 32.88
+margin_top = 30.0
+margin_right = 96.88
+margin_bottom = 94.0
+mouse_filter = 2
+toggle_mode = true
+texture_normal = ExtResource( 12 )
+texture_pressed = ExtResource( 13 )
+expand = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+key = "esc"
+
+[node name="enter" type="TextureButton" parent="."]
+margin_left = 949.864
+margin_top = 527.259
+margin_right = 1013.86
+margin_bottom = 591.259
+mouse_filter = 2
+toggle_mode = true
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 14 )
+expand = true
+script = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+key = "enter"

@@ -1,0 +1,23 @@
+{
+  "default": [
+    {
+      "wood_age": [
+        "sub"
+      ],
+      "stone_age": [
+        "sub",
+        "small_stone"
+      ]
+    }
+  ],
+  "craft_table": [
+    {
+      "wood_age": [
+        "sub"
+      ],
+      "stone_age": [
+        "sub"
+      ]
+    }
+  ]
+}

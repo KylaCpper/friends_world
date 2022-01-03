@@ -1,0 +1,104 @@
+{
+  "item": [
+    {
+      "key": "wood_stick",
+      "name": "",
+      "img": "wood_age/wood_stick",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "broken_wood_tool",
+      "name": "",
+      "img": "wood_age/broken_wood_tool",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "flint",
+      "name": "",
+      "img": "wood_age/flint",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "flint_broken",
+      "name": "",
+      "img": "wood_age/flint_broken",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ],
+  "plant": [],
+  "food": [],
+  "armor": [
+    {
+      "key": "wood_hat",
+      "name": "wood_hat",
+      "img": "wood_age/wood_hat",
+      "script": "",
+      "armor": "hat",
+      "hp": 3,
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_coat",
+      "name": "wood_coat",
+      "img": "wood_age/wood_coat",
+      "script": "",
+      "armor": "coat",
+      "hp": 5,
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_pants",
+      "name": "wood_pants",
+      "img": "wood_age/wood_pants",
+      "script": "",
+      "armor": "pants",
+      "hp": 4,
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_shoe",
+      "name": "wood_shoe",
+      "img": "wood_age/wood_shoe",
+      "script": "",
+      "armor": "shoe",
+      "hp": 3,
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ]
+}

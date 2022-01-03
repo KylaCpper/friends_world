@@ -1,0 +1,145 @@
+{
+  "tool": [
+    {
+      "key": "wood_pickaxe",
+      "name": "",
+      "img": "wood_age/wood_pickaxe",
+      "tool": "pickaxe",
+      "lv": 0,
+      "hp": 10,
+      "speed": 1.5,
+      "atk": 1,
+      "damage": [
+        {
+          "name": "broken_wood_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_shovel",
+      "name": "",
+      "img": "wood_age/wood_shovel",
+      "tool": "shovel",
+      "lv": 0,
+      "hp": 10,
+      "speed": 1.5,
+      "atk": 1,
+      "damage": [
+        {
+          "name": "broken_wood_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_axe",
+      "name": "",
+      "img": "wood_age/wood_axe",
+      "tool": "axe",
+      "lv": 0,
+      "hp": 10,
+      "speed": 1.5,
+      "atk": 1,
+      "damage": [
+        {
+          "name": "broken_wood_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_sword",
+      "name": "",
+      "img": "wood_age/wood_sword",
+      "tool": "sword",
+      "lv": 0,
+      "hp": 10,
+      "speed": 1.5,
+      "atk": 2,
+      "damage": [
+        {
+          "name": "broken_wood_tool"
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_hoe",
+      "name": "",
+      "img": "wood_age/wood_hoe",
+      "tool": "hoe",
+      "lv": 0,
+      "hp": 10,
+      "speed": 1.5,
+      "atk": 1,
+      "damage": [
+        {
+          "name": "broken_wood_tool"
+        }
+      ],
+      "script": "base/tool/hoe",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wood_hammer",
+      "name": "",
+      "img": "wood_age/wood_hammer",
+      "tool": [
+        "hammer",
+        "pickaxe"
+      ],
+      "lv": 0,
+      "hp": 20,
+      "speed": 1.7,
+      "atk": 2,
+      "damage": [
+        {
+          "name": "broken_wood_tool",
+          "stop": 0
+        },
+        {
+          "name": "wood_board",
+          "pro": 50
+        }
+      ],
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "lithic_core",
+      "name": "",
+      "img": "wood_age/lithic_core",
+      "tool": [
+        "axe"
+      ],
+      "lv": 1,
+      "hp": 30,
+      "speed": [
+        1.5
+      ],
+      "atk": 2,
+      "damage": "",
+      "script": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ]
+}

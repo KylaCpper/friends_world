@@ -1,0 +1,160 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "atk"
+length = 0.666667
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:hand")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.00657e-18, 3.5471e-10, -2.83765e-09, 1, 1, 1, 1, 0.666667, 1, 0, 0, 0, 1.00657e-18, 3.5471e-10, -2.83765e-09, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:arm1")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 2.84217e-14, 1, 1, 1, 1, 0.0666667, 1, -5.36442e-08, 0, 1.49012e-08, -0.0451584, 0.0174941, 0.0120772, 0.998754, 1, 1, 1, 0.133333, 1, 1.78814e-08, 2.98023e-08, 1.49012e-08, -0.14548, 0.056358, 0.0389074, 0.986988, 1, 1, 1, 0.2, 1, -5.96047e-09, 0, 1.49012e-08, -0.266347, 0.103181, 0.0712322, 0.955688, 1, 1, 1, 0.266667, 1, -1.78814e-08, -5.96046e-08, 0, -0.360956, 0.139832, 0.0965345, 0.916973, 1, 1, 1, 0.333333, 1, 0, -2.98023e-08, 4.47035e-08, -0.401915, 0.155699, 0.107489, 0.895918, 1, 1, 1, 0.4, 1, -2.98023e-08, 2.98023e-08, -1.49012e-08, -0.36835, 0.0443189, 0.0656459, 0.926307, 1, 1, 1, 0.466667, 1, -5.96047e-08, 2.98023e-08, 1.49012e-08, -0.278424, -0.115166, -0.00847198, 0.953491, 1, 1, 1, 0.533333, 1, -3.57628e-08, 0, 1.49012e-08, -0.164926, -0.121644, -0.0530416, 0.977338, 1, 1, 1, 0.6, 1, -2.38419e-08, 0, 1.49012e-08, -0.0591048, -0.0309623, -0.0474028, 0.996645, 1, 1, 1, 0.666667, 1, 0, 0, 0, 0, 0, 2.84217e-14, 1, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:arm0")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -5.96046e-08, 1.93715e-07, 1, 1, 1, 1, 0.0666667, 1, -0.00106552, 0.0127325, 0.036859, -0.0015456, 0.00444446, 0.00715778, 0.999963, 1, 1, 1, 0.133333, 1, -0.00339171, 0.0405287, 0.117326, -0.00559342, 0.0143276, 0.0246403, 0.999578, 1, 1, 1, 0.2, 1, -0.0062131, 0.0742429, 0.214924, -0.0120985, 0.0266396, 0.050169, 0.998312, 1, 1, 1, 0.266667, 1, -0.00853929, 0.102039, 0.295391, -0.0206336, 0.0371513, 0.0796086, 0.99592, 1, 1, 1, 0.333333, 1, -0.00960484, 0.114772, 0.33225, -0.030524, 0.0424648, 0.108787, 0.992689, 1, 1, 1, 0.4, 1, 0.0346656, 0.106198, 0.178691, -0.0464286, -0.023228, 0.146987, 0.987775, 1, 1, 1, 0.466667, 1, 0.0972549, 0.094077, -0.0384081, -0.0818184, -0.135854, 0.180078, 0.970784, 1, 1, 1, 0.533333, 1, 0.112521, 0.0911206, -0.0913593, -0.162292, -0.189225, 0.119812, 0.960989, 1, 1, 1, 0.6, 1, 0.0900164, 0.0728964, -0.0730874, -0.167609, -0.142875, 0.00218326, 0.975443, 1, 1, 1, 0.666667, 1, 0, 0, 0, 2.98023e-08, -5.96046e-08, 1.93715e-07, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "default"
+length = 0.001
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:hand")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.00657e-18, 3.5471e-10, -2.83765e-09, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:arm1")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 2.84217e-14, 1, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:arm0")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -5.96046e-08, 1.93715e-07, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "default001"
+length = 0.001
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:hand")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -5.96046e-08, -1.49012e-08, 5.96046e-08, -1.26723e-17, -3.83625e-09, -3.30329e-09, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:arm1")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, -0.18714, 0.0626645, -0.0900876, 0.976184, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:arm0")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -5.96046e-08, 1.93715e-07, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "eat"
+length = 0.5
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:hand")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.00657e-18, 3.5471e-10, -2.83765e-09, 1, 1, 1, 1, 0.5, 1, -2.98023e-08, -5.96046e-08, -5.96046e-08, 5.96047e-08, 3.54696e-10, -1.4407e-09, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:arm1")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 2.84217e-14, 1, 1, 1, 1, 0.0666667, 1, -1.42109e-14, 2.98023e-08, 1.49012e-08, -0.0757305, 0.0321557, -0.0461074, 0.995543, 1, 1, 1, 0.133333, 1, -3.57628e-08, 0, 1.49012e-08, -0.222182, 0.0774453, -0.139358, 0.961882, 1, 1, 1, 0.2, 1, -5.96047e-08, 0, 1.49012e-08, -0.356135, 0.0820776, -0.234832, 0.900714, 1, 1, 1, 0.266667, 1, -1.49011e-08, 0, 1.49012e-08, -0.434868, 0.0588884, -0.301732, 0.846392, 1, 1, 1, 0.333333, 1, -2.98023e-08, 0, 0, -0.463816, 0.0426301, -0.330012, 0.821066, 1, 1, 1, 0.4, 1, -2.98023e-08, 0, 0, -0.454748, 0.0431861, -0.314693, 0.83205, 1, 1, 1, 0.466667, 1, -2.98023e-08, 0, 0, -0.441587, 0.0439399, -0.292797, 0.846959, 1, 1, 1, 0.5, 1, -2.98023e-08, 0, 0, -0.43832, 0.0441179, -0.287419, 0.850482, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:arm0")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -5.96046e-08, 1.93715e-07, 1, 1, 1, 1, 0.0666667, 1, 0, 0, 0, -0.0437735, 0.0912542, 0.0159283, 0.994738, 1, 1, 1, 0.133333, 1, 0, 0, 0, -0.103542, 0.234088, 0.040361, 0.965843, 1, 1, 1, 0.2, 1, 0, 0, 0, -0.111644, 0.30192, 0.0490124, 0.945504, 1, 1, 1, 0.266667, 1, 0, 0, 0, -0.103719, 0.324931, 0.0445633, 0.938976, 1, 1, 1, 0.333333, 1, 0, 0, 0, -0.0994891, 0.331669, 0.0400476, 0.93728, 1, 1, 1, 0.5, 1, 0, 0, 0, -0.0994891, 0.331669, 0.0400476, 0.93728, 1, 1, 1 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "eating"
+length = 0.333333
+loop = true
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:hand")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -2.98023e-08, -2.98023e-08, 0, -7.5395e-18, -5.23323e-09, -1.44067e-09, 1, 1, 1, 1, 0.333333, 1, -2.98023e-08, -2.98023e-08, 0, -7.5395e-18, -5.23323e-09, -1.44067e-09, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:arm1")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, -2.98023e-08, 0, 0, -0.463816, 0.0426301, -0.330012, 0.821066, 1, 1, 1, 0.0666667, 1, -2.98023e-08, 0, 0, -0.454748, 0.0431861, -0.314693, 0.83205, 1, 1, 1, 0.133333, 1, -2.98023e-08, 0, 0, -0.441587, 0.0439399, -0.292797, 0.846959, 1, 1, 1, 0.2, 1, -2.98023e-08, 0, 0, -0.441587, 0.0439399, -0.292797, 0.846959, 1, 1, 1, 0.266667, 1, -2.98023e-08, 0, 0, -0.454748, 0.0431861, -0.314693, 0.83205, 1, 1, 1, 0.333333, 1, -2.98023e-08, 0, 0, -0.463816, 0.0426301, -0.330012, 0.821066, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:arm0")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, -0.0994891, 0.331669, 0.0400476, 0.93728, 1, 1, 1, 0.333333, 1, 0, 0, 0, -0.0994891, 0.331669, 0.0400476, 0.93728, 1, 1, 1 )
+
+[sub_resource type="Animation" id=6]
+resource_name = "event"
+length = 0.333333
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Armature/Skeleton:hand")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = true
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, 0, 0, 0, 1.00657e-18, 3.5471e-10, -2.83765e-09, 1, 1, 1, 1, 0.333333, 1, 0, 0, 0, 1.00657e-18, 3.5471e-10, -2.83765e-09, 1, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Armature/Skeleton:arm1")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = true
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 2.84217e-14, 1, 1, 1, 1, 0.0666667, 1, -5.36442e-08, 0, 2.98023e-08, -0.0585472, -0.00725565, 0.0325205, 0.997728, 1, 1, 1, 0.133333, 1, 1.78814e-08, 0, 0, -0.0788278, 0.0129713, 0.00572736, 0.996787, 1, 1, 1, 0.2, 1, 1.78814e-08, 0, 1.49012e-08, -0.0811335, 0.0668284, -0.079896, 0.991246, 1, 1, 1, 0.266667, 1, -7.7486e-08, 0, 1.49012e-08, -0.0649997, 0.0709777, -0.0917966, 0.991116, 1, 1, 1, 0.333333, 1, 0, 0, 0, 0, 0, 2.84217e-14, 1, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Armature/Skeleton:arm0")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = true
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, -5.96046e-08, 1.93715e-07, 1, 1, 1, 1, 0.0666667, 1, -0.0545249, -0.0963653, 0.0223172, -0.102433, -0.0545218, 0.0211536, 0.993019, 1, 1, 1, 0.133333, 1, -0.0853209, -0.216645, 0.0606274, -0.11988, -0.0754909, 0.0222659, 0.989664, 1, 1, 1, 0.2, 1, -0.0966962, -0.28039, 0.0823187, -0.0948155, -0.0894536, 0.00957494, 0.991421, 1, 1, 1, 0.266667, 1, -0.0794828, -0.236226, 0.0699088, -0.0561172, -0.0677393, -0.00189631, 0.996122, 1, 1, 1, 0.333333, 1, 0, 0, 0, 2.98023e-08, -5.96046e-08, 1.93715e-07, 1, 1, 1, 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer"]
+anims/atk = SubResource( 1 )
+anims/default = SubResource( 2 )
+anims/default001 = SubResource( 3 )
+anims/eat = SubResource( 4 )
+anims/eating = SubResource( 5 )
+anims/event = SubResource( 6 )

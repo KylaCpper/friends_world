@@ -1,0 +1,144 @@
+{
+  "item": [
+    {
+      "key": "rubbish",
+      "name": "",
+      "img": "other/rubbish",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ],
+  "ore": [
+    {
+      "key": "coal",
+      "name": "",
+      "img": "default/stone/coal",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ],
+  "plant": [
+    {
+      "key": "wheat",
+      "name": "",
+      "img": "default/plant/wheat",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wheat_seed",
+      "name": "",
+      "img": "default/plant/wheat_seed",
+      "script": "base/item/seed",
+      "plant": "wheat_grow0",
+      "crop": "true",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ],
+  "food": [
+    {
+      "key": "bread",
+      "name": "",
+      "img": "default/food/bread",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": {
+        "time": 1,
+        "satiety": 1,
+        "thirst": 1,
+        "protein": 1,
+        "phytonutrients": 1,
+        "ir": 1
+      },
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "test_bread1",
+      "name": "bread_sub_protein",
+      "img": "default/food/bread",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": {
+        "time": 1,
+        "satiety": 0,
+        "thirst": 0,
+        "protein": -1,
+        "phytonutrients": 0,
+        "ir": 0
+      },
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "test_bread2",
+      "name": "bread_sub_phytonutrients",
+      "img": "default/food/bread",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": {
+        "time": 1,
+        "satiety": 0,
+        "thirst": 0,
+        "protein": 0,
+        "phytonutrients": -1,
+        "ir": 0
+      },
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "test_bread3",
+      "name": "bread_sub_ir",
+      "img": "default/food/bread",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": {
+        "time": 1,
+        "satiety": 0,
+        "thirst": 0,
+        "protein": 0,
+        "phytonutrients": 0,
+        "ir": -1
+      },
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "wild_pig_meat",
+      "name": "wild_pig_meat",
+      "img": "animal/land/wild_pig/wild_pig_meat",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": {
+        "time": 3,
+        "satiety": 4,
+        "thirst": 1,
+        "protein": 2,
+        "phytonutrients": 0,
+        "ir": 0
+      },
+      "mass": "",
+      "max": ""
+    }
+  ]
+}

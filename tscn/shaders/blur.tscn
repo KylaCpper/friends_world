@@ -1,0 +1,40 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://tscn/shaders/blur.gd" type="Script" id=1]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+
+uniform float blur_amount : hint_range(0, 5);
+
+void fragment() {
+	COLOR = textureLod(SCREEN_TEXTURE, SCREEN_UV, blur_amount);
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/blur_amount = 2.0
+
+[sub_resource type="ImageTexture" id=3]
+flags = 0
+flags = 0
+size = Vector2( 1, 1 )
+
+[node name="blur" type="TextureRect"]
+material = SubResource( 2 )
+margin_right = 1024.0
+margin_bottom = 602.0
+texture = SubResource( 3 )
+expand = true
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="Panel" parent="."]
+self_modulate = Color( 1, 1, 1, 0.392157 )
+margin_right = 1029.0
+margin_bottom = 598.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

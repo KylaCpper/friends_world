@@ -1,0 +1,89 @@
+{
+  "item": [
+    {
+      "key": "rope",
+      "name": "",
+      "img": "stone_age/rope",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": "",
+      "fuel": ""
+    },
+    {
+      "key": "plant_fibres",
+      "name": "",
+      "img": "stone_age/plant_fibres",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": "",
+      "fuel": ""
+    },
+    {
+      "key": "broken_stone_tool",
+      "name": "",
+      "img": "stone_age/broken_stone_tool",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": "",
+      "fuel": ""
+    },
+    {
+      "key": "small_stone",
+      "name": "",
+      "img": "stone_age/small_stone",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": "",
+      "fuel": ""
+    },
+    {
+      "key": "charcoal",
+      "name": "",
+      "img": "stone_age/charcoal",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": "",
+      "fuel": ""
+    }
+  ],
+  "plant": [
+    {
+      "key": "flax",
+      "name": "",
+      "img": "stone_age/flax",
+      "script": "",
+      "plant": "",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    },
+    {
+      "key": "flax_seed",
+      "name": "",
+      "img": "stone_age/flax_seed",
+      "script": "base/item/seed",
+      "plant": "flax_grow0",
+      "crop": "",
+      "food": "",
+      "mass": "",
+      "max": ""
+    }
+  ],
+  "food": []
+}

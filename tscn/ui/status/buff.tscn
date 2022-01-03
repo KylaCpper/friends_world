@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/font/smallest_12.tres" type="DynamicFont" id=1]
+[ext_resource path="res://tscn/ui/bg.tres" type="StyleBox" id=2]
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/img/ui/status/buff/malnutrition.png" type="Texture" id=4]
+
+[node name="buff" type="Panel"]
+margin_right = 240.0
+margin_bottom = 60.0
+rect_min_size = Vector2( 220, 60 )
+mouse_filter = 2
+custom_styles/panel = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="text" type="Label" parent="."]
+margin_left = 59.0
+margin_top = 4.0
+margin_right = 210.0
+margin_bottom = 23.0
+custom_fonts/font = ExtResource( 3 )
+text = "xxxxxx"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="time" type="Label" parent="."]
+margin_left = 179.438
+margin_top = 4.0
+margin_right = 231.438
+margin_bottom = 19.0
+custom_fonts/font = ExtResource( 1 )
+text = ":--"
+align = 2
+valign = 1
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="info" type="Label" parent="."]
+margin_left = 59.0
+margin_top = 21.0
+margin_right = 210.0
+margin_bottom = 54.0
+custom_fonts/font = ExtResource( 1 )
+text = "leg_arm_inguried_buff_info"
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="texture" type="TextureRect" parent="."]
+margin_left = 7.5
+margin_top = 7.5
+margin_right = 52.5
+margin_bottom = 52.5
+texture = ExtResource( 4 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}

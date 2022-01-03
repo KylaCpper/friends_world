@@ -1,0 +1,15 @@
+keys,en,zh
+grass,grass,草
+grass_info,Uprooted grass,被连根拔起的草
+grass_block,grass block,草方块
+grass_block_info,A pile of grass,一堆草
+grass_dirt,grass dirt,草泥土
+grass_dirt_info,Grassy soil,长满草的泥土
+farmland,farmland,耕地
+farmland_info,Cultivated land,耕过的土地
+farmland_wet,farmland(wet),耕地(湿润)
+farmland_wet_info,Suitable for growing crops,适合种植作物
+wheat_ripe,wheat(ripe),小麦(成熟)
+wheat_ripe_info,wheat(ripe),小麦(成熟)
+wheat_grow,wheat(Growing),小麦(生长中)
+wheat_grow_info,wheat(Growing),小麦(生长中)

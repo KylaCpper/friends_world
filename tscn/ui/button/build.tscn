@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://assets/font/smallest_12.tres" type="DynamicFont" id=1]
+[ext_resource path="res://assets/img/ui/button/button_default.png" type="Texture" id=2]
+[ext_resource path="res://assets/img/ui/button/button_down.png" type="Texture" id=3]
+[ext_resource path="res://assets/img/ui/button/button_hover.png" type="Texture" id=4]
+[ext_resource path="res://assets/img/ui/composite/ripple3.png" type="Texture" id=5]
+[ext_resource path="res://assets/img/ui/composite/ripple4.png" type="Texture" id=6]
+[ext_resource path="res://assets/img/ui/composite/ripple1.png" type="Texture" id=7]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 9.0
+margin_right = 9.0
+margin_top = 9.0
+margin_bottom = 9.0
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 3 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 16.0
+margin_right = 16.0
+margin_top = 16.0
+margin_bottom = 16.0
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 32, 32 )
+margin_left = 9.0
+margin_right = 9.0
+margin_top = 9.0
+margin_bottom = 12.0
+
+[node name="Button" type="Button"]
+margin_left = -121.0
+margin_right = -65.0
+margin_bottom = 56.0
+focus_mode = 0
+mouse_filter = 1
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+custom_fonts/font = ExtResource( 1 )
+custom_constants/hseparation = 0
+enabled_focus_mode = 0
+icon = ExtResource( 7 )
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 65.9313
+margin_top = -4.0
+margin_right = 113.931
+margin_bottom = 44.0
+mouse_filter = 2
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 65.9313
+margin_top = 17.855
+margin_right = 113.931
+margin_bottom = 65.855
+mouse_filter = 2
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pos2" type="Node2D" parent="."]
+position = Vector2( 102.528, 44.0193 )

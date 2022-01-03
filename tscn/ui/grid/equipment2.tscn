@@ -1,0 +1,79 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://tscn/ui/grid/bg.tres" type="StyleBox" id=1]
+[ext_resource path="res://assets/font/smallest_12.tres" type="DynamicFont" id=2]
+[ext_resource path="res://assets/img/item/wood_age/wood_pickaxe.png" type="Texture" id=3]
+[ext_resource path="res://assets/img/ui/grid/equipment3.png" type="Texture" id=4]
+[ext_resource path="res://tscn/ui/grid/hp.tscn" type="PackedScene" id=5]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 4 )
+region_rect = Rect2( 0, 0, 48, 48 )
+margin_left = 9.0
+margin_right = 9.0
+margin_top = 9.0
+margin_bottom = 9.0
+
+[node name="bar0" type="Panel"]
+margin_right = 56.0
+margin_bottom = 56.0
+rect_min_size = Vector2( 56, 56 )
+mouse_filter = 2
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="texture" type="TextureRect" parent="."]
+visible = false
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 52.0
+margin_bottom = 52.0
+mouse_filter = 2
+texture = ExtResource( 3 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="num" type="Label" parent="."]
+visible = false
+margin_left = 17.422
+margin_top = 43.757
+margin_right = 57.422
+margin_bottom = 62.757
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "99"
+align = 2
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg" type="Panel" parent="."]
+visible = false
+margin_right = 56.0
+margin_bottom = 56.0
+mouse_filter = 2
+custom_styles/panel = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="bg2" type="Panel" parent="."]
+visible = false
+modulate = Color( 1, 0.392157, 0.392157, 1 )
+margin_right = 56.0
+margin_bottom = 56.0
+mouse_filter = 2
+custom_styles/panel = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="hp" parent="." instance=ExtResource( 5 )]
+mouse_filter = 2

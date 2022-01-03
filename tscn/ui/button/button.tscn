@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=1]
+[ext_resource path="res://tscn/ui/button/button_focus.tres" type="StyleBox" id=2]
+[ext_resource path="res://tscn/ui/button/button_hover.tres" type="StyleBox" id=3]
+[ext_resource path="res://tscn/ui/button/button_default.tres" type="StyleBox" id=4]
+[ext_resource path="res://tscn/ui/button/button_press.tres" type="StyleBox" id=5]
+
+[node name="connect" type="Button"]
+margin_left = 448.01
+margin_top = 383.0
+margin_right = 604.01
+margin_bottom = 451.0
+custom_styles/hover = ExtResource( 3 )
+custom_styles/pressed = ExtResource( 5 )
+custom_styles/focus = ExtResource( 2 )
+custom_styles/normal = ExtResource( 4 )
+custom_fonts/font = ExtResource( 1 )
+text = "connect_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}

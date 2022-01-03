@@ -1,0 +1,15 @@
+keys,en,zh
+eat_sound,The sound of eating,吃东西的声音
+move_sound,Sound of walking,走路的声音
+run_sound,Running sound,跑步的声音
+player_move_sound,The sound of someone moving,有人移动的声音
+hurt_block_sound,The sound of digging blocks,挖方块的声音
+damage_block_sound,The sound of block breaking,方块破坏的声音
+place_block_sound,The sound of placing blocks,放置方块的声音
+fall_sound,The sound of falling,坠地的声音
+fall_block_sound,The sound of a cube falling to the ground,方块坠地的声音
+fire_sound,Burning sound,燃烧的声音
+water_move_sound,The sound of running water,流水的声音
+hit_sound,Sound of percussion,打击的声音
+wave_sound,The sound of waving,挥舞的声音
+hurt_sound,Wounded voice,受伤的声音

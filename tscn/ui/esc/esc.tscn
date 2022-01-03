@@ -1,0 +1,110 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://tscn/ui/esc/esc.gd" type="Script" id=1]
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=2]
+[ext_resource path="res://tscn/ui/button/button_press.tres" type="StyleBox" id=3]
+[ext_resource path="res://tscn/ui/button/button_hover.tres" type="StyleBox" id=4]
+[ext_resource path="res://tscn/ui/button/button_default.tres" type="StyleBox" id=5]
+[ext_resource path="res://tscn/ui/button/button_focus.tres" type="StyleBox" id=6]
+[ext_resource path="res://tscn/ui/set_page/set_page.tscn" type="PackedScene" id=7]
+[ext_resource path="res://tscn/shaders/blur.tscn" type="PackedScene" id=8]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.196078, 0.196078, 0.196078, 0.203922 )
+
+[node name="esc" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="blur" parent="." instance=ExtResource( 8 )]
+visible = false
+
+[node name="bg" type="Panel" parent="."]
+margin_right = 1045.0
+margin_bottom = 620.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="jump" type="Button" parent="."]
+margin_left = 819.0
+margin_top = 508.0
+margin_right = 963.0
+margin_bottom = 550.0
+rect_pivot_offset = Vector2( 147, 33.5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = ExtResource( 2 )
+text = "jump_cg_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel" type="Button" parent="."]
+margin_left = 144.655
+margin_top = 238.671
+margin_right = 300.655
+margin_bottom = 280.671
+rect_pivot_offset = Vector2( 147, 33.5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = ExtResource( 2 )
+text = "cancel_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="create_server" type="Button" parent="."]
+margin_left = 144.655
+margin_top = 322.671
+margin_right = 300.655
+margin_bottom = 364.671
+rect_pivot_offset = Vector2( 147, 33.5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = ExtResource( 2 )
+text = "create_server_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="set" type="Button" parent="."]
+margin_left = 144.655
+margin_top = 410.671
+margin_right = 300.655
+margin_bottom = 452.671
+rect_pivot_offset = Vector2( 147, 33.5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = ExtResource( 2 )
+text = "option_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="home" type="Button" parent="."]
+margin_left = 143.655
+margin_top = 496.671
+margin_right = 300.655
+margin_bottom = 538.671
+rect_pivot_offset = Vector2( 147, 33.5 )
+custom_styles/hover = ExtResource( 4 )
+custom_styles/pressed = ExtResource( 3 )
+custom_styles/focus = ExtResource( 6 )
+custom_styles/normal = ExtResource( 5 )
+custom_fonts/font = ExtResource( 2 )
+text = "home_ui"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="set_page" parent="." instance=ExtResource( 7 )]
+visible = false

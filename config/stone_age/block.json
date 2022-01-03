@@ -1,0 +1,311 @@
+{
+  "block": [
+    {
+      "key": "craft_table",
+      "name": "",
+      "intensity": 2,
+      "drop": "",
+      "tool": "",
+      "script": "stone_age/block/craft_table",
+      "audio": "",
+      "model": "",
+      "material": "",
+      "transparent": "",
+      "entity": "",
+      "dire": "",
+      "tickable": "",
+      "smash": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "plant": "",
+      "food": ""
+    },
+    {
+      "key": "stone_brick",
+      "name": "",
+      "intensity": 6,
+      "drop": {
+        "pickaxe": [
+          {
+            "name": "stone_brick",
+            "lv": 1
+          }
+        ]
+      },
+      "tool": "",
+      "script": "stone_age/block/stone_brick",
+      "audio": "",
+      "model": "",
+      "material": "",
+      "transparent": "",
+      "entity": "",
+      "dire": "",
+      "tickable": "",
+      "smash": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "plant": "",
+      "food": ""
+    },
+    {
+      "key": "stone_blast_furnace_brick",
+      "name": "",
+      "intensity": 6,
+      "drop": {
+        "pickaxe": [
+          {
+            "name": "stone_brick",
+            "lv": 1
+          }
+        ]
+      },
+      "tool": "",
+      "script": "stone_age/block/stone_blast_furnace_brick",
+      "audio": "",
+      "model": "",
+      "material": "",
+      "transparent": "",
+      "entity": "",
+      "dire": "",
+      "tickable": "",
+      "smash": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "plant": "",
+      "food": ""
+    }
+  ],
+  "stone": [],
+  "plant": [
+    {
+      "key": "flax_grow0",
+      "name": "flax_seed",
+      "intensity": 0.5,
+      "tickable": 20,
+      "drop": {
+        "hand": [
+          {
+            "name": "flax_seed"
+          }
+        ],
+        "fall": [
+          {
+            "name": "flax_seed"
+          }
+        ]
+      },
+      "script": "base/block/plant",
+      "audio": "",
+      "plant": "flax_grow1",
+      "model": "stone_age/plant/flax_grow0",
+      "material": 5,
+      "transparent": "",
+      "entity": "false",
+      "smash": 2,
+      "dire": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "tool": "",
+      "food": "",
+      "advanced": ""
+    },
+    {
+      "key": "flax_grow1",
+      "name": "flax_grow",
+      "intensity": 0.5,
+      "tickable": 20,
+      "drop": {
+        "fall": []
+      },
+      "script": "base/block/plant",
+      "audio": "",
+      "plant": "flax_grow2",
+      "model": "stone_age/plant/flax_grow1",
+      "material": 5,
+      "transparent": "",
+      "entity": "false",
+      "smash": 2,
+      "dire": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "tool": "",
+      "food": "",
+      "advanced": ""
+    },
+    {
+      "key": "flax_grow2",
+      "name": "flax_grow",
+      "intensity": 0.5,
+      "tickable": 20,
+      "drop": {
+        "fall": []
+      },
+      "script": "base/block/plant",
+      "audio": "",
+      "plant": "flax_grow3",
+      "model": "stone_age/plant/flax_grow2",
+      "material": 5,
+      "transparent": "",
+      "entity": "false",
+      "smash": 2,
+      "dire": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "tool": "",
+      "food": "",
+      "advanced": ""
+    },
+    {
+      "key": "flax_grow3",
+      "name": "flax_grow",
+      "intensity": 0.5,
+      "tickable": 20,
+      "drop": {
+        "fall": []
+      },
+      "script": "base/block/plant",
+      "audio": "",
+      "plant": "flax_ripe",
+      "model": "stone_age/plant/flax_grow3",
+      "material": 5,
+      "transparent": "",
+      "entity": "false",
+      "smash": 2,
+      "dire": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "tool": "",
+      "food": "",
+      "advanced": ""
+    },
+    {
+      "key": "flax_ripe",
+      "name": "",
+      "intensity": 0.5,
+      "tickable": 20,
+      "drop": {
+        "hand": [
+          {
+            "name": "flax_seed",
+            "pro": 70,
+            "stop": 0
+          },
+          {
+            "name": "flax"
+          }
+        ],
+        "fall": [
+          {
+            "name": "flax_seed",
+            "pro": 70,
+            "stop": 0
+          },
+          {
+            "name": "flax"
+          }
+        ]
+      },
+      "script": "base/block/plant",
+      "audio": "",
+      "plant": "",
+      "model": "stone_age/plant/flax_ripe",
+      "material": 5,
+      "transparent": "",
+      "entity": "false",
+      "smash": 2,
+      "dire": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "tool": "",
+      "food": "",
+      "advanced": ""
+    }
+  ],
+  "liquid": [],
+  "other": [
+    {
+      "key": "stone_furnace",
+      "name": "",
+      "intensity": 6,
+      "drop": {
+        "pickaxe": [
+          {
+            "name": "stone_furnace",
+            "lv": 1
+          }
+        ]
+      },
+      "tool": "",
+      "script": "stone_age/block/stone_furnace",
+      "audio": "",
+      "model": "",
+      "material": "",
+      "transparent": "",
+      "entity": "",
+      "dire": 2,
+      "tickable": "",
+      "smash": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "plant": "",
+      "food": ""
+    },
+    {
+      "key": "stone_blast_furnace",
+      "name": "",
+      "intensity": 6,
+      "drop": {
+        "pickaxe": [
+          {
+            "name": "stone_furnace",
+            "lv": 1
+          }
+        ]
+      },
+      "tool": "",
+      "script": "stone_age/block/stone_blast_furnace",
+      "audio": "",
+      "model": "",
+      "material": "",
+      "transparent": "",
+      "entity": "",
+      "dire": 1,
+      "tickable": "",
+      "smash": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "plant": "",
+      "food": ""
+    }
+  ]
+}

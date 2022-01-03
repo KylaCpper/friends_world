@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/audio/other/shuttle.wav" type="AudioStream" id=1]
+[ext_resource path="res://tscn/audio/audio.gd" type="Script" id=2]
+[ext_resource path="res://assets/audio/other/talk.wav" type="AudioStream" id=3]
+[ext_resource path="res://assets/audio/other/time_machine.wav" type="AudioStream" id=4]
+[ext_resource path="res://assets/audio/other/tv_light.wav" type="AudioStream" id=5]
+[ext_resource path="res://assets/audio/ui/drop_002.ogg" type="AudioStream" id=6]
+[ext_resource path="res://assets/audio/ui/drop_004.ogg" type="AudioStream" id=7]
+
+[node name="audio" type="Node"]
+script = ExtResource( 2 )
+
+[node name="talk" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -6.0
+bus = "sound"
+
+[node name="shuttle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = 6.0
+bus = "sound"
+
+[node name="time_machine" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -12.0
+bus = "sound"
+
+[node name="tv_light" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "sound"
+
+[node name="ui" type="Node" parent="."]
+
+[node name="hover" type="AudioStreamPlayer" parent="ui"]
+stream = ExtResource( 6 )
+volume_db = -6.0
+bus = "sound"
+
+[node name="click" type="AudioStreamPlayer" parent="ui"]
+stream = ExtResource( 7 )
+volume_db = -6.0
+bus = "sound"

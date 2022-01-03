@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/font/smallest_16.tres" type="DynamicFont" id=1]
+[ext_resource path="res://tscn/ui/msg_pickup/text.gd" type="Script" id=2]
+
+[node name="text" type="Label"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -573.365
+margin_top = -315.421
+margin_right = -445.365
+margin_bottom = -286.421
+custom_fonts/font = ExtResource( 1 )
+text = "泥土+1"
+align = 1
+valign = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tween" type="Tween" parent="."]

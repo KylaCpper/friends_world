@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/font/smallest_24.tres" type="DynamicFont" id=1]
+[ext_resource path="res://tscn/ui/msg/msg.gd" type="Script" id=2]
+
+[node name="text" type="Label"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -612.0
+margin_top = -300.0
+margin_right = -412.0
+margin_bottom = -270.0
+rect_min_size = Vector2( 200, 30 )
+custom_fonts/font = ExtResource( 1 )
+text = "2222"
+align = 1
+valign = 1
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="tween" type="Tween" parent="."]

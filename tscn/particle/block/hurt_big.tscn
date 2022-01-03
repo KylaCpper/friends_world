@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://tscn/particle/block/material/default.tres" type="Material" id=1]
+[ext_resource path="res://tscn/particle/block/hurt_big.tres" type="Material" id=2]
+[ext_resource path="res://tscn/particle/block/hurt_big.gd" type="Script" id=3]
+
+[sub_resource type="CubeMesh" id=1]
+material = ExtResource( 1 )
+size = Vector3( 0.1, 0.1, 0.1 )
+
+[node name="hurt_big" type="Spatial"]
+script = ExtResource( 3 )
+
+[node name="particles" type="Particles" parent="."]
+amount = 20
+lifetime = 0.7
+explosiveness = 1.0
+visibility_aabb = AABB( -1.75133, -1.72418, -1.99184, 3.50266, 3.44837, 3.98367 )
+local_coords = false
+process_material = ExtResource( 2 )
+draw_pass_1 = SubResource( 1 )
+
+[node name="time" type="Timer" parent="."]
+one_shot = true
+autostart = true

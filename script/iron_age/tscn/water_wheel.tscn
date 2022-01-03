@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/model/iron_age/water_wheel_real1.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/model/iron_age/water_wheel_real0.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://tscn/world/terrain4.tres" type="Material" id=3]
+[ext_resource path="res://script/iron_age/tscn/water_wheel.gd" type="Script" id=4]
+
+[node name="water_wheel" type="MeshInstance"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, -0.5, 0.5, 0 )
+material_override = ExtResource( 3 )
+mesh = ExtResource( 2 )
+material/0 = null
+script = ExtResource( 4 )
+
+[node name="fan" type="MeshInstance" parent="."]
+material_override = ExtResource( 3 )
+mesh = ExtResource( 1 )
+material/0 = null

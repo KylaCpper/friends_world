@@ -1,0 +1,31 @@
+{
+  "block": [
+    {
+      "key": "wood_board",
+      "name": "",
+      "intensity": 2,
+      "drop": "",
+      "tool": "",
+      "script": "",
+      "audio": "",
+      "model": "",
+      "material": "",
+      "transparent": "",
+      "entity": "",
+      "dire": "",
+      "tickable": "",
+      "smash": "",
+      "intensity_dig": "",
+      "mass": "",
+      "max": "",
+      "liquid": "",
+      "branch": "",
+      "plant": "",
+      "food": ""
+    }
+  ],
+  "stone": [],
+  "plant": [],
+  "liquid": [],
+  "other": []
+}

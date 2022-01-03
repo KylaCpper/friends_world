@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://tscn/character/player/AnimationTree.gd" type="Script" id=1]
+[ext_resource path="res://tscn/character/player/animationtree.tres" type="AnimationNodeBlendTree" id=2]
+
+[node name="AnimationTree" type="AnimationTree"]
+tree_root = ExtResource( 2 )
+anim_player = NodePath("../AnimationPlayer")
+active = true
+process_mode = 0
+root_motion_track = NodePath("player/Skeleton:waist0")
+parameters/atk/active = false
+parameters/dejected_down/active = false
+parameters/eat/active = false
+parameters/eating/blend_amount = 0.0
+parameters/event/active = false
+parameters/hurt/active = false
+parameters/jump/blend_amount = 0.0
+parameters/keyboard/blend_amount = 0.0
+parameters/sit/blend_amount = 0.0
+parameters/sit_boss/active = false
+parameters/talk/active = false
+parameters/talk_big/active = false
+parameters/walk/blend_amount = 0.0
+parameters/walk_speed/scale = 1.2
+script = ExtResource( 1 )

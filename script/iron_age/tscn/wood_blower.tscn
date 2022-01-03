@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/model/iron_age/wood_blower_real.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://tscn/world/terrain4.tres" type="Material" id=3]
+[ext_resource path="res://assets/model/iron_age/wood_blower_real1.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://script/iron_age/tscn/wood_blower.gd" type="Script" id=5]
+
+[node name="wood_blower" type="MeshInstance"]
+material_override = ExtResource( 3 )
+mesh = ExtResource( 1 )
+material/0 = null
+script = ExtResource( 5 )
+
+[node name="fan" type="MeshInstance" parent="."]
+material_override = ExtResource( 3 )
+mesh = ExtResource( 4 )
+material/0 = null

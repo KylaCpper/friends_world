@@ -1,0 +1,147 @@
+[gd_resource type="AnimationNodeBlendTree" load_steps=31 format=2]
+
+[sub_resource type="AnimationNodeAnimation" id=1]
+animation = "sit_boss"
+
+[sub_resource type="AnimationNodeAnimation" id=2]
+animation = "eating"
+
+[sub_resource type="AnimationNodeAnimation" id=3]
+animation = "eat"
+
+[sub_resource type="AnimationNodeAnimation" id=4]
+animation = "hurt"
+
+[sub_resource type="AnimationNodeAnimation" id=5]
+animation = "atk"
+
+[sub_resource type="AnimationNodeAnimation" id=6]
+animation = "walk"
+
+[sub_resource type="AnimationNodeAnimation" id=7]
+animation = "event"
+
+[sub_resource type="AnimationNodeAnimation" id=8]
+animation = "jump"
+
+[sub_resource type="AnimationNodeAnimation" id=9]
+animation = "dejected_down"
+
+[sub_resource type="AnimationNodeAnimation" id=10]
+animation = "keyboard"
+
+[sub_resource type="AnimationNodeAnimation" id=11]
+animation = "talk"
+
+[sub_resource type="AnimationNodeAnimation" id=12]
+animation = "talk_big"
+
+[sub_resource type="AnimationNodeAnimation" id=13]
+animation = "sit"
+
+[sub_resource type="AnimationNodeAnimation" id=14]
+animation = "default"
+
+[sub_resource type="AnimationNodeOneShot" id=15]
+
+[sub_resource type="AnimationNodeTimeScale" id=16]
+
+[sub_resource type="AnimationNodeOneShot" id=17]
+
+[sub_resource type="AnimationNodeOneShot" id=18]
+filter_enabled = true
+filters = [ "player/Skeleton:arm_left0", "player/Skeleton:arm_left1", "player/Skeleton:hand_left", "player/Skeleton:shoulder_left" ]
+
+[sub_resource type="AnimationNodeBlend2" id=19]
+filter_enabled = true
+filters = [ "player/Skeleton:arm_left0", "player/Skeleton:arm_left1", "player/Skeleton:hand_left", "player/Skeleton:shoulder_left" ]
+
+[sub_resource type="AnimationNodeOneShot" id=20]
+filter_enabled = true
+filters = [ "player/Skeleton:arm_left0", "player/Skeleton:arm_left1", "player/Skeleton:hand_left" ]
+
+[sub_resource type="AnimationNodeTimeScale" id=21]
+
+[sub_resource type="AnimationNodeOneShot" id=22]
+
+[sub_resource type="AnimationNodeBlend2" id=23]
+
+[sub_resource type="AnimationNodeBlend2" id=24]
+
+[sub_resource type="AnimationNodeBlend2" id=25]
+
+[sub_resource type="AnimationNodeOneShot" id=26]
+
+[sub_resource type="AnimationNodeOneShot" id=27]
+
+[sub_resource type="AnimationNodeOneShot" id=28]
+
+[sub_resource type="AnimationNodeBlend2" id=29]
+
+[sub_resource type="AnimationNodeTimeScale" id=30]
+
+[resource]
+resource_local_to_scene = true
+graph_offset = Vector2( 569, 27.5 )
+nodes/Animation/node = SubResource( 14 )
+nodes/Animation/position = Vector2( -660, 80 )
+"nodes/Animation 10/node" = SubResource( 1 )
+"nodes/Animation 10/position" = Vector2( 600, 580 )
+"nodes/Animation 11/node" = SubResource( 2 )
+"nodes/Animation 11/position" = Vector2( 120, 200 )
+"nodes/Animation 12/node" = SubResource( 3 )
+"nodes/Animation 12/position" = Vector2( 900, 200 )
+"nodes/Animation 14/node" = SubResource( 4 )
+"nodes/Animation 14/position" = Vector2( -620, 500 )
+"nodes/Animation 15/node" = SubResource( 5 )
+"nodes/Animation 15/position" = Vector2( -1280, 440 )
+"nodes/Animation 2/node" = SubResource( 6 )
+"nodes/Animation 2/position" = Vector2( -660, 260 )
+"nodes/Animation 3/node" = SubResource( 7 )
+"nodes/Animation 3/position" = Vector2( 1140, 220 )
+"nodes/Animation 4/node" = SubResource( 8 )
+"nodes/Animation 4/position" = Vector2( -180, 260 )
+"nodes/Animation 5/node" = SubResource( 9 )
+"nodes/Animation 5/position" = Vector2( -100, 580 )
+"nodes/Animation 6/node" = SubResource( 10 )
+"nodes/Animation 6/position" = Vector2( 680, 200 )
+"nodes/Animation 7/node" = SubResource( 11 )
+"nodes/Animation 7/position" = Vector2( 360, 580 )
+"nodes/Animation 8/node" = SubResource( 12 )
+"nodes/Animation 8/position" = Vector2( 160, 600 )
+"nodes/Animation 9/node" = SubResource( 13 )
+"nodes/Animation 9/position" = Vector2( 440, 200 )
+nodes/atk/node = SubResource( 15 )
+nodes/atk/position = Vector2( -840, 400 )
+nodes/atk_speed/node = SubResource( 16 )
+nodes/atk_speed/position = Vector2( -1054, 469.5 )
+nodes/dejected_down/node = SubResource( 17 )
+nodes/dejected_down/position = Vector2( -80, 400 )
+nodes/eat/node = SubResource( 18 )
+nodes/eat/position = Vector2( 880, 0 )
+nodes/eating/node = SubResource( 19 )
+nodes/eating/position = Vector2( 120, 20 )
+nodes/event/node = SubResource( 20 )
+nodes/event/position = Vector2( 1140, 0 )
+nodes/event_speed/node = SubResource( 21 )
+nodes/event_speed/position = Vector2( 1260, 140 )
+nodes/hurt/node = SubResource( 22 )
+nodes/hurt/position = Vector2( -400, 420 )
+nodes/jump/node = SubResource( 23 )
+nodes/jump/position = Vector2( -180, 40 )
+nodes/keyboard/node = SubResource( 24 )
+nodes/keyboard/position = Vector2( 660, 0 )
+nodes/output/position = Vector2( 1180, 440 )
+nodes/sit/node = SubResource( 25 )
+nodes/sit/position = Vector2( 440, 0 )
+nodes/sit_boss/node = SubResource( 26 )
+nodes/sit_boss/position = Vector2( 600, 380 )
+nodes/talk/node = SubResource( 27 )
+nodes/talk/position = Vector2( 380, 380 )
+nodes/talk_big/node = SubResource( 28 )
+nodes/talk_big/position = Vector2( 160, 400 )
+nodes/walk/node = SubResource( 29 )
+nodes/walk/position = Vector2( -420, 60 )
+nodes/walk_speed/node = SubResource( 30 )
+nodes/walk_speed/position = Vector2( -400, 260 )
+node_connections = [ "event", 0, "eat", "event", 1, "event_speed", "output", 0, "sit_boss", "jump", 0, "walk", "jump", 1, "Animation 4", "atk", 0, "event", "atk", 1, "atk_speed", "eating", 0, "jump", "eating", 1, "Animation 11", "hurt", 0, "atk", "hurt", 1, "Animation 14", "talk", 0, "talk_big", "talk", 1, "Animation 7", "eat", 0, "keyboard", "eat", 1, "Animation 12", "walk", 0, "Animation", "walk", 1, "walk_speed", "walk_speed", 0, "Animation 2", "talk_big", 0, "dejected_down", "talk_big", 1, "Animation 8", "sit", 0, "eating", "sit", 1, "Animation 9", "event_speed", 0, "Animation 3", "sit_boss", 0, "talk", "sit_boss", 1, "Animation 10", "keyboard", 0, "sit", "keyboard", 1, "Animation 6", "atk_speed", 0, "Animation 15", "dejected_down", 0, "hurt", "dejected_down", 1, "Animation 5" ]
