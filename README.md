@@ -42,5 +42,5 @@ godot 3.33 版本 编译了godot voxel
 *         generator：里面为地形生成器脚本
 *     
   
-![alt](63YH%F7@BFL_(3EM_NH3P65.png)
+![alt](/65.png)
 ![alt](/zh5.png)
